@@ -1,0 +1,35 @@
+html {
+    scroll-behaviour: smooth;
+}
+
+body {
+    background-color: #000000;
+}
+
+/* ------------ NAVBAR ----------*/
+.navbar {
+    background: none;
+    border-color: transparent;
+}
+
+.navbar .navbar-collapse {
+    text-align: right;
+}
+
+.fa-navicon {
+    color: blue;
+    width: 50px;
+}
+
+
+/* ------------ JUMBOTRON ----------*/
+.jumbotron {
+    background-image: url("../images/liveband.jpg");
+    background-size: cover;
+    height: 96vh;
+    width: 100vw;
+    background-attachment: fixed;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
