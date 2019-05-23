@@ -78,7 +78,7 @@ header.jumbotron {
 /* ------------ TOUR DATES ----------*/
 
 .tour {
- background-image: url("../images/rocketsilencehero.png");
+ background-image: url("../images/rocketsilenceheroflipped.png");
  background-size: cover;
  background-attachment: fixed;
  background-position: center;
@@ -127,30 +127,32 @@ header.jumbotron {
 
 .member {
  text-align: center;
- margin: 0 auto;
  z-index: 5;
 }
 
-.member-photo {
+.member-photo,
+.member-photo-2 {
  width: 400px;
  height: 550px;
- padding: 20px;
  z-index: 5;
 }
 
-.member-heading {
+.member-heading,
+.member-heading-2 {
  color: #ffffff;
  text-shadow: 1px 1px black;
  z-index: 5;
 }
 
-.member-bio {
+.member-bio,
+.member-bio-2 {
  color: #ffffff;
  text-shadow: 1px 1px black;
  font-weight: bold;
  line-height: 30px;
  z-index: 5;
 }
+
 
 .translucent-overlay {
  position: relative;
@@ -191,4 +193,64 @@ header.jumbotron {
 
 .card-img-top {
  border-radius: 5px;
+}
+
+/* ------------ GALLERY ----------*/
+
+.gallery {
+ background-image: url("../images/rocketsilencehero.png");
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center;
+}
+
+.img-fluid {
+ max-width: 100%;
+ height: auto;
+}
+
+img {
+ vertical-align: middle;
+ border-style: none;
+}
+
+.row .fb-row {
+ padding: 0;
+}
+
+
+/*----------------- MEDIA QUERIES -----------------*/
+
+@media screen and (max-width: 576px) {
+ .fb-row {
+  padding-left: 5rem;
+ }
+
+ /* .member-bio {
+  padding-left: 1rem;
+  padding-right: 1rem;
+ }
+
+ .member-bio-2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+ }
+
+ .member-photo {
+  padding-right: 3rem;
+  padding-left: 3rem;
+ }
+ .member-photo-2 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+ }
+
+ .table {
+  padding: 1rem;
+ } */
+
+ .row .fb-row {
+  padding-left: 5px;
+  padding-right: 5px;
+ }
 }
