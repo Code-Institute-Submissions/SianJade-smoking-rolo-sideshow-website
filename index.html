@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>The Smoking Rolo Sideshow</title>
@@ -14,13 +14,12 @@
 
 <body>
 
-    <!------------ JUMBOTRON AND NAVBAR ---------------->
-
+    <!-- JUMBOTRON AND NAVBAR -->
     <header class="jumbotron">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">The Smoking<br>Rolo Sideshow</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
+    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
   </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
@@ -41,256 +40,396 @@
                         <a class="nav-link" href="#photo-gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="booking">Booking</a>
+                        <a class="nav-link" href="#booking">Booking</a>
                     </li>
                 </ul>
+            </div>
         </nav>
     </header>
 
-    <!------------ VIDEO SECTION ---------------->
+    <!-- VIDEO SECTION -->
 
     <section class="video" id="video">
-        <h1>Video</h1>
+        <h1 class="video-heading">Videographic</h1>
         <div class="video-container row d-flex justify-content-around">
             <div class="embed-responsive embed-responsive-4by3 col">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvMOFg_DwBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvMOFg_DwBE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <!------------ TOUR DATE SECTION ---------------->
+    <!-- TOUR DATE SECTION -->
 
     <section class="tour" id="tour">
         <h1 class="tour-heading">Tour Dates</h1>
-        <div class="tourdates-table table-responsive-sm">
-            <table class="table date-table">
+        <div class="container-fluid tourdates-table table-responsive-sm row">
+            <table class="table date-table col-sm-12">
                 <tbody>
                     <tr>
                         <td>Mon 28 Oct</td>
                         <td>Saitama Super Arena</td>
                         <td>Saitama, Japan</td>
-                        <td><button class="btn btn-light"><a href="https://www.saitama-arena.co.jp/e/" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="https://www.saitama-arena.co.jp/e/" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Wed 30 Oct</td>
                         <td>Yokohama Arena</td>
                         <td>Yokohama, Japan</td>
-                        <td><button class="btn btn-light"><a href="https://www.yokohama-arena.co.jp/en/" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="https://www.yokohama-arena.co.jp/en/" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Thu 31 Oct</td>
                         <td>Tokyo Dome</td>
                         <td>Tokyo, Japan</td>
-                        <td><button class="btn btn-light"><a href="https://www.tokyo-dome.co.jp/en/tourists/dome/" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="https://www.tokyo-dome.co.jp/en/tourists/dome/" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Fri 01 Nov</td>
                         <td>MUZA Kawasaki Symphony Hall</td>
                         <td>Kawasaki, Japan</td>
-                        <td><button class="btn btn-light"><a href="https://www.kawasaki-sym-hall.jp/index_e.php" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="https://www.kawasaki-sym-hall.jp/index_e.php" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Sat 02 Nov</td>
                         <td>Makuhari Messe</td>
                         <td>Chiba, Japan</td>
-                        <td><button class="btn btn-light"><a href="https://www.m-messe.co.jp/en/" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="https://www.m-messe.co.jp/en/" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Mon 04 Nov</td>
                         <td>Orix Theater</td>
                         <td>Osaka, Japan</td>
-                        <td><button class="btn btn-light"><a href="https://osaka-info.jp/en/page/mice-orix-theater" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="https://osaka-info.jp/en/page/mice-orix-theater" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Tue 05 Nov</td>
                         <td>Nagaragawa Convention Center</td>
                         <td>Gifu, Japan</td>
-                        <td><button class="btn btn-light"><a href="http://www.g-ncc.jp/en/about_en/" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="http://www.g-ncc.jp/en/about_en/" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Wed 06 Nov</td>
                         <td>Nagoya International Exhibition Hall</td>
                         <td>Nagoya, Japan</td>
-                        <td><button class="btn btn-light"><a href="https://portmesse.com/en" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="https://portmesse.com/en" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Fri 08 Nov</td>
                         <td>Club Quattro</td>
                         <td>Hiroshima, Japan</td>
-                        <td><button class="btn btn-light"><a href="http://www.club-quattro.com/en/hiroshima/" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="http://www.club-quattro.com/en/hiroshima/" target="_blank">Tickets</a></td>
                     </tr>
                     <tr>
                         <td>Sat 09 Nov</td>
                         <td>Club Quattro</td>
                         <td>Hiroshima, Japan</td>
-                        <td><button class="btn btn-light"><a href="http://www.club-quattro.com/en/hiroshima/" target="_blank">Tickets</a></button></td>
+                        <td><a class="button btn btn-light" href="http://www.club-quattro.com/en/hiroshima/" target="_blank">Tickets</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <!------------- ABOUT SECTION ---------->
+    <!-- ABOUT SECTION -->
 
     <section class="about" id="about">
         <div class="translucent-overlay">
             <h1 class="about-heading">About</h1>
-            <div class="row d-flex justify-content-between">
-                <div class="member col-xl-4 col-lg-4 col-md-4">
-                    <img class="member-photo" src="assets/images/member1.jpg"></img>
-                    <h3 class="member-heading">Name - Instrument</h3>
-                    <p class="member-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis accusantium expedita harum, molestias consectetur delectus asperiores excepturi eius, nam, dicta reiciendis enim aut? Omnis eaque non, beatae perspiciatis,
-                        quisquam enim nam facilis numquam architecto.</p>
-                </div>
-                <div class="member col-xl-4 col-lg-4 col-md-4">
-                    <img class="member-photo" src="assets/images/member2.jpg"></img>
-                    <h3 class="member-heading">Name - Instrument</h3>
-                    <p class="member-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis accusantium expedita harum, molestias consectetur delectus asperiores excepturi eius, nam, dicta reiciendis enim aut? Omnis eaque non, beatae perspiciatis,
-                        quisquam enim nam facilis numquam architecto.</p>
-                </div>
-                <div class="member col-xl-4 col-lg-4 col-md-4">
-                    <img class="member-photo" src="assets/images/member3.jpg"></img>
-                    <h3 class="member-heading">Name - Instrument</h3>
-                    <p class="member-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis accusantium expedita harum, molestias consectetur delectus asperiores excepturi eius, nam, dicta reiciendis enim aut? Omnis eaque non, beatae perspiciatis,
-                        quisquam enim nam facilis numquam architecto.</p>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-2"></div>
-                    <div class="member col-xl-4 col-lg-4 col-md-4 col-sm-5">
-                        <img class="member-photo-2" src="assets/images/member4.jpg"></img>
-                        <h3 class="member-heading-2">Name - Instrument</h3>
-                        <p class="member-bio-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis accusantium expedita harum, molestias consectetur delectus asperiores excepturi eius, nam, dicta reiciendis enim aut? Omnis eaque non, beatae perspiciatis,
-                            quisquam enim nam facilis numquam architecto.</p>
+            <div class="card-deck row justify-content-center mb-2">
+                <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+                    <div class="card bg-transparent text-center member">
+                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/bg-h600.jpg" alt="Ben Greener">
+                        <div class="card-body card-about">
+                            <h3 class="card-title name-instrument">Ben Greener - Vocals/Guitar</h3>
+                            <p class="card-text member-bio">Ben is the main songwriter for The Smoking Rolo Sideshow, co-writing the first album with Greig Waugh and the second album by himself. He cites his influences as Mark Lanegan, Elvis Costello, and Death From Above.</p>
+                        </div>
                     </div>
-                    <div class="member col-xl-4 col-lg-4 col-md-4 col-sm-5">
-                        <img class="member-photo-2" src="assets/images/member5.jpg"></img>
-                        <h3 class="member-heading-2">Name - Instrument</h3>
-                        <p class="member-bio-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis accusantium expedita harum, molestias consectetur delectus asperiores excepturi eius, nam, dicta reiciendis enim aut? Omnis eaque non, beatae perspiciatis,
-                            quisquam enim nam facilis numquam architecto.</p>
+                </div>
+                <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+                    <div class="card bg-transparent text-center member">
+                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/km-h600.jpg" alt="Kev McEwan">
+                        <div class="card-body card-about">
+                            <h3 class="card-title name-instrument">Kevin McEwan - Lead Guitar/Vocals</h3>
+                            <p class="card-text member-bio">Kev began playing live shows with his first band "Placid Blue" at the age of fifteen, and hasn't stopped playing since. His influences include Sonic Youth, Butthole Surfers, and Nirvana, bringing a raw and unpredictable edge
+                                to the sound of the band.</p>
+                        </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2"></div>
+                </div>
+                <div class="card-deck row justify-content-center">
+                    <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+                        <div class="card bg-transparent text-center member">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/gw-h600.jpg" alt="Greig Waugh">
+                            <div class="card-body card-about">
+                                <h3 class="card-title name-instrument">Greig Waugh - Rhythm Guitar</h3>
+                                <p class="card-text member-bio">Greig is an avid guitar builder, and enjoys experimenting with the potential of analogue and digital music. His influences include Kyuss, Primus, Grinderman, and Stephen Brodsky's Octave Museum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+                        <div class="card bg-transparent text-center member">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/jf-h600.jpg" alt="Jonathan Frith">
+                            <div class="card-body card-about">
+                                <h3 class="card-title name-instrument">Jonathan Frith - Bass Guitar</h3>
+                                <p class="card-text member-bio">Jonathan switched from lead guitar to bass as a teenager, and his playing style helps drive the band's complex sound. His influences include Foo Fighters, Queens of the Stone Age, and Band of Horses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck row justify-content-center">
+                <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+                    <div class="card bg-transparent text-center member">
+                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/march-h600.jpg" alt="Michael Archbold">
+                        <div class="card-body card-about">
+                            <h3 class="card-title name-instrument">Michael Archbold - Keyboards</h3>
+                            <p class="card-text member-bio">Michael began playing drums in high school while dabbling with the keyboards, before making the switch full-time with a variety of funk and soul bands around Nottingham. His influences include Money Mark, Ray Manzarek, and
+                                Booker T. Jones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+                    <div class="card bg-transparent text-center member">
+                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/mash-h600.jpg" alt="Michael Ashurst">
+                        <div class="card-body card-about">
+                            <h3 class="card-title name-instrument">Michael Ashurst - Drums</h3>
+                            <p class="card-text member-bio">"Mick the Stick" is an Amble lad, and longtime collaborator with Kevin McEwan (being the drummer for Placid Blue in the early 2000s). Michael's influences include Zebrahead, Less than Jake, and Reel Big Fish.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!------------- MUSIC SECTION ---------->
+    <!-- MUSIC SECTION -->
 
     <section class="music" id="music">
-        <h1 class="music-heading">Music</h1>
-        <div class="row">
-            <div class="card-deck row">
-                <div class="card col-xl-3 col-lg-3 col-md-4 col-sm-auto">
-                    <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
-                    <div class="card-body">
-                        <h5 class="card-title">A Waltz in Clown Shoes</h5>
-                        <audio controls align="center" src="assets/audio/AWaltzInClownShoes.mp3" class="audio">A Waltz in Clown Shoes</audio>
+        <div class="translucent-overlay-2">
+            <h1 class="music-heading">Music</h1>
+            <div class="card-deck row justify-content-around">
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
+                        <div class="card-body">
+                            <h5 class="card-title">A Waltz in Clown Shoes</h5>
+                            <audio controls src="assets/audio/AWaltzInClownShoes.mp3" class="audio">A Waltz in Clown Shoes</audio>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-xl-3 col-lg-3 col-md-4 col-sm-auto">
-                    <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top" alt="Album art for Rocket Silence">
-                    <div class="card-body">
-                        <h5 class="card-title">Days of Zero Cool</h5>
-                        <audio controls align="center" src="assets/audio/DaysOfZeroCool.mp3" class="audio">Days of Zero Cool</audio>
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top" alt="Album art for Rocket Silence">
+                        <div class="card-body">
+                            <h5 class="card-title">Days of Zero Cool</h5>
+                            <audio controls src="assets/audio/DaysOfZeroCool.mp3" class="audio">Days of Zero Cool</audio>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-xl-3 col-lg-3 col-md-4 col-sm-auto">
-                    <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
-                    <div class="card-body">
-                        <h5 class="card-title">Snake Oil Charm</h5>
-                        <audio controls align="center" src="assets/audio/SnakeOilCharm.mp3" class="audio">Snake Oil Charm</audio>
-                    </div>
-                </div>
-                <div class="card col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-auto">
-                    <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top" alt="Album art for Rocket Silence">
-                    <div class="card-body">
-                        <h5 class="card-title">A Human Pyramid of Potential</h5>
-                        <audio controls align="center" src="assets/audio/AHumanPyramidOfPotential.mp3" class="audio">A Human Pyramid of Potential</audio>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card-deck row">
-                <div class="card col-xl-3 col-lg-3 col-md-4 col-sm-auto">
-                    <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top" alt="Album art for Rocket Silence">
-                    <div class="card-body">
-                        <h5 class="card-title">Courage Action Circumstance</h5>
-                        <audio controls align="center" src="assets/audio/CourageActionCircumstance.mp3" class="audio">Courage Action Circumstance</audio>
-                    </div>
-                </div>
-                <div class="card col-xl-3 col-lg-3 col-md-4 col-sm-auto">
-                    <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
-                    <div class="card-body">
-                        <h5 class="card-title">eL rO shambO</h5>
-                        <audio controls align="center" src="assets/audio/ElRoShambo.mp3" class="audio">eL rO shambO</audio>
-                    </div>
-                </div>
-                <div class="card col-xl-3 col-lg-3 col-md-4 col-sm-auto">
-                    <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top" alt="Album art for Rocket Silence">
-                    <div class="card-body">
-                        <h5 class="card-title">Thought for the Weak</h5>
-                        <audio controls align="center" src="assets/audio/ThoughtForTheWeak.mp3" class="audio">Thought for the Weak</audio>
-                    </div>
-                </div>
-                <div class="card col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-auto">
-                    <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
-                    <div class="card-body">
-                        <h5 class="card-title">Devil's Best Tune</h5>
-                        <audio controls align="center" src="assets/audio/DevilsBestTune.mp3" class="audio">Devil's Best Tune</audio>
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
+                        <div class="card-body">
+                            <h5 class="card-title">Snake Oil Charm</h5>
+                            <audio controls src="assets/audio/SnakeOilCharm.mp3" class="audio">Snake Oil Charm</audio>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="card-deck row justify-content-around">
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top" alt="Album art for Rocket Silence">
+                        <div class="card-body">
+                            <h5 class="card-title">As in Uffish Thought</h5>
+                            <audio controls src="assets/audio/AsInUffishThought.mp3" class="audio">As in Uffish Thought</audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
+                        <div class="card-body">
+                            <h5 class="card-title">eL rO shambO</h5>
+                            <audio controls src="assets/audio/ElRoShambo.mp3" class="audio">eL rO shambO</audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top" alt="Album art for Rocket Silence">
+                        <div class="card-body">
+                            <h5 class="card-title">The Thunder</h5>
+                            <audio controls src="assets/audio/TheThunder.mp3" class="audio">The Thunder</audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck row justify-content-around">
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
+                        <div class="card-body">
+                            <h5 class="card-title">Devil's Best Tune</h5>
+                            <audio controls src="assets/audio/DevilsBestTune.mp3" class="audio">Devil's Best Tune</audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top" alt="Album art for Rocket Silence">
+                        <div class="card-body">
+                            <h5 class="card-title">Thought for the Weak</h5>
+                            <audio controls src="assets/audio/ThoughtForTheWeak.mp3" class="audio">Thought for the Weak</audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
+                    <div class="card bg-transparent">
+                        <img src="assets/images/muchoMojoCover.jpg" class="card-img-top" alt="Album art for Mucho Mojo Baby">
+                        <div class="card-body">
+                            <h5 class="card-title">Spider Whisky</h5>
+                            <audio controls src="assets/audio/SpiderWhisky.mp3" class="audio">Spider Whisky</audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!------------- GALLERY SECTION ---------->
+    <!-- GALLERY SECTION -->
 
     <section class="gallery" id="photo-gallery">
         <h1 class="gallery-heading">Gallery</h1>
-        <div class="fancybox row">
-            <div class="col-lg-2 d-sm-none d-md-block"></div>
-            <div class="col-lg-8 col-sm-12">
-                <div class="row fb-row">
-                    <div class="col-4 col-lg-3 col-sm-4">
+        <div class="container-fluid mx-auto">
+            <div class="row justify-content-center fb-row">
+                <div class="col-lg-3 col-md-4 fancybox">
+                    <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/benguitar1.JPG">
-                    <img class="img-fluid thumbnail" src="assets/images/benguitar1thumb.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/benguitar1thumb.jpg" alt="ben and guitar">
                 </a>
+                    </div>
+                    <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                    <img class="img-fluid thumbnail" src="assets/images/tintshot1-thumb.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
+                    </div>
+                    <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/live.JPG">
-                    <img class="img-fluid thumbnail" src="assets/images/live-thumb.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/live-thumb.jpg"  alt="live band">
                 </a>
                     </div>
-                    <div class="col-4 col-lg-3 col-sm-4">
+                </div>
+                <div class="col-lg-3 col-md-4 fancybox">
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                </a>
+                    </div>
+                    <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/practice.jpg">
-                    <img class="img-fluid thumbnail" src="assets/images/practice-thumb.jpg">
-                </a>
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                    <img class="img-fluid thumbnail" src="assets/images/tintshot1-thumb.jpg">
-                </a>
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                    <img class="img-fluid thumbnail" src="assets/images/tintshot1-thumb.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/practice-thumb.jpg"  alt="band practice">
                 </a>
                     </div>
-                    <div class="col-4 col-lg-3 col-sm-4">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
-                    <img class="img-fluid thumbnail" src="assets/images/rob-greg-paul-thumb.jpg">
-                </a>
+                    <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                    <img class="img-fluid thumbnail" src="assets/images/tintshot1-thumb.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 fancybox">
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/rob-greg-paul-thumb.jpg"  alt="Rob, Greg, and Paul">
+                </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block fancybox">
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/rob-greg-paul-thumb.jpg"  alt="Rob, Greg, and Paul">
+                </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                    <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 d-sm-none d-md-block"></div>
+        </div>
     </section>
 
-    <!--------- Script links ---------->
+    <section class="booking" id="booking">
+        <h1 class="booking-heading">Booking</h1>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <label for="name" class="col-2 col-form-label">Name:</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-2 col-form-label">Email:</label>
+                    <div class="col-10">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phone-number" class="col-2 col-form-label">Phone:</label>
+                    <div class="col-10">
+                        <input type="tel" class="form-control" id="phone-number" placeholder="Tel.">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="guests-expected" class="col-2 col-form-label">Guests expected:</label>
+                    <div class="col-10">
+                        <select class="form-control" id="guests-expected">
+                      <option>1-100</option>
+                      <option>100-500</option>
+                      <option>500-1000</option>
+                      <option>1000+</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="additional-info" class="col-2 col-form-label">Additional Info</label>
+                    <div class="col-10">
+                        <textarea class="form-control" id="additional-info" rows="5" placeholder="Additional information (optional)"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer container row no-gutters">
+        <div class="col-lg-1 offset-lg-10"><a class="social-media" href="#"><span><i class="fab fa-facebook"></i></span></a></div>
+        <div class="col-lg-1 offset-lg-10"><a class="social-media" href="#"><span><i class="fab fa-twitter"></i></span></a></div>
+        <div class="col-lg-1 offset-lg-10"><a class="social-media" href="#"><span><i class="fab fa-instagram"></i></span></a></div>
+    </footer>
+
+    <!-- Script links -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    </script>
 </body>
 
 </html>
