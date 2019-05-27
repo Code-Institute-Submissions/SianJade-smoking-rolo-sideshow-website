@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>The Smoking Rolo Sideshow</title>
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">The Smoking<br>Rolo Sideshow</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
   </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
@@ -51,9 +51,11 @@
 
     <section class="video" id="video">
         <h1 class="video-heading">Videographic</h1>
-        <div class="video-container row d-flex justify-content-around">
-            <div class="embed-responsive embed-responsive-4by3 col">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvMOFg_DwBE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-container">
+            <div class="row">
+                <div class="col-10 offset-1 embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvMOFg_DwBE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -61,72 +63,74 @@
     <!-- TOUR DATE SECTION -->
 
     <section class="tour" id="tour">
-        <h1 class="tour-heading">Tour Dates</h1>
-        <div class="container-fluid tourdates-table table-responsive-sm row">
-            <table class="table date-table col-sm-12">
-                <tbody>
-                    <tr>
-                        <td>Mon 28 Oct</td>
-                        <td>Saitama Super Arena</td>
-                        <td>Saitama, Japan</td>
-                        <td><a class="button btn btn-light" href="https://www.saitama-arena.co.jp/e/" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Wed 30 Oct</td>
-                        <td>Yokohama Arena</td>
-                        <td>Yokohama, Japan</td>
-                        <td><a class="button btn btn-light" href="https://www.yokohama-arena.co.jp/en/" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Thu 31 Oct</td>
-                        <td>Tokyo Dome</td>
-                        <td>Tokyo, Japan</td>
-                        <td><a class="button btn btn-light" href="https://www.tokyo-dome.co.jp/en/tourists/dome/" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Fri 01 Nov</td>
-                        <td>MUZA Kawasaki Symphony Hall</td>
-                        <td>Kawasaki, Japan</td>
-                        <td><a class="button btn btn-light" href="https://www.kawasaki-sym-hall.jp/index_e.php" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Sat 02 Nov</td>
-                        <td>Makuhari Messe</td>
-                        <td>Chiba, Japan</td>
-                        <td><a class="button btn btn-light" href="https://www.m-messe.co.jp/en/" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Mon 04 Nov</td>
-                        <td>Orix Theater</td>
-                        <td>Osaka, Japan</td>
-                        <td><a class="button btn btn-light" href="https://osaka-info.jp/en/page/mice-orix-theater" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Tue 05 Nov</td>
-                        <td>Nagaragawa Convention Center</td>
-                        <td>Gifu, Japan</td>
-                        <td><a class="button btn btn-light" href="http://www.g-ncc.jp/en/about_en/" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Wed 06 Nov</td>
-                        <td>Nagoya International Exhibition Hall</td>
-                        <td>Nagoya, Japan</td>
-                        <td><a class="button btn btn-light" href="https://portmesse.com/en" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Fri 08 Nov</td>
-                        <td>Club Quattro</td>
-                        <td>Hiroshima, Japan</td>
-                        <td><a class="button btn btn-light" href="http://www.club-quattro.com/en/hiroshima/" target="_blank">Tickets</a></td>
-                    </tr>
-                    <tr>
-                        <td>Sat 09 Nov</td>
-                        <td>Club Quattro</td>
-                        <td>Hiroshima, Japan</td>
-                        <td><a class="button btn btn-light" href="http://www.club-quattro.com/en/hiroshima/" target="_blank">Tickets</a></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="translucent-overlay">
+            <h1 class="tour-heading">Tour Dates</h1>
+            <div class="container-fluid tourdates-table table-responsive-sm row">
+                <table class="table date-table col-sm-12">
+                    <tbody>
+                        <tr>
+                            <td>Mon 28 Oct</td>
+                            <td>Saitama Super Arena</td>
+                            <td>Saitama, Japan</td>
+                            <td><a class="button btn btn-light" href="https://www.saitama-arena.co.jp/e/" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Wed 30 Oct</td>
+                            <td>Yokohama Arena</td>
+                            <td>Yokohama, Japan</td>
+                            <td><a class="button btn btn-light" href="https://www.yokohama-arena.co.jp/en/" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Thu 31 Oct</td>
+                            <td>Tokyo Dome</td>
+                            <td>Tokyo, Japan</td>
+                            <td><a class="button btn btn-light" href="https://www.tokyo-dome.co.jp/en/tourists/dome/" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Fri 01 Nov</td>
+                            <td>MUZA Kawasaki Symphony Hall</td>
+                            <td>Kawasaki, Japan</td>
+                            <td><a class="button btn btn-light" href="https://www.kawasaki-sym-hall.jp/index_e.php" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sat 02 Nov</td>
+                            <td>Makuhari Messe</td>
+                            <td>Chiba, Japan</td>
+                            <td><a class="button btn btn-light" href="https://www.m-messe.co.jp/en/" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mon 04 Nov</td>
+                            <td>Orix Theater</td>
+                            <td>Osaka, Japan</td>
+                            <td><a class="button btn btn-light" href="https://osaka-info.jp/en/page/mice-orix-theater" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Tue 05 Nov</td>
+                            <td>Nagaragawa Convention Center</td>
+                            <td>Gifu, Japan</td>
+                            <td><a class="button btn btn-light" href="http://www.g-ncc.jp/en/about_en/" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Wed 06 Nov</td>
+                            <td>Nagoya International Exhibition Hall</td>
+                            <td>Nagoya, Japan</td>
+                            <td><a class="button btn btn-light" href="https://portmesse.com/en" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Fri 08 Nov</td>
+                            <td>Club Quattro</td>
+                            <td>Hiroshima, Japan</td>
+                            <td><a class="button btn btn-light" href="http://www.club-quattro.com/en/hiroshima/" target="_blank">Tickets</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sat 09 Nov</td>
+                            <td>Club Quattro</td>
+                            <td>Hiroshima, Japan</td>
+                            <td><a class="button btn btn-light" href="http://www.club-quattro.com/en/hiroshima/" target="_blank">Tickets</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
@@ -203,7 +207,7 @@
     <!-- MUSIC SECTION -->
 
     <section class="music" id="music">
-        <div class="translucent-overlay-2">
+        <div class="translucent-overlay">
             <h1 class="music-heading">Music</h1>
             <div class="card-deck row justify-content-around">
                 <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12">
@@ -298,129 +302,170 @@
     <!-- GALLERY SECTION -->
 
     <section class="gallery" id="photo-gallery">
-        <h1 class="gallery-heading">Gallery</h1>
-        <div class="container-fluid mx-auto">
-            <div class="row justify-content-center fb-row">
-                <div class="col-lg-3 col-md-4 fancybox">
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/benguitar1.JPG">
+        <div class="translucent-overlay">
+            <h1 class="gallery-heading">Gallery</h1>
+            <div class="container-fluid mx-auto">
+                <div class="row justify-content-center fb-row">
+                    <div class="col-lg-3 col-md-4 fancybox">
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/benguitar1.JPG">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/benguitar1thumb.jpg" alt="ben and guitar">
                 </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/live.JPG">
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/live.JPG">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/live-thumb.jpg"  alt="live band">
                 </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 fancybox">
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                    <div class="col-lg-3 col-md-4 fancybox">
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/practice.jpg">
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/practice.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/practice-thumb.jpg"  alt="band practice">
                 </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 fancybox">
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
+                    <div class="col-lg-3 col-md-4 fancybox">
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/rob-greg-paul-thumb.jpg"  alt="Rob, Greg, and Paul">
                 </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 d-none d-lg-block fancybox">
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
+                    <div class="col-lg-3 d-none d-lg-block fancybox">
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/rob-greg-paul-thumb.jpg"  alt="Rob, Greg, and Paul">
                 </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
                     <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
                 </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- BOOKING SECTION -->
+
     <section class="booking" id="booking">
-        <h1 class="booking-heading">Booking</h1>
-        <div class="container">
-            <form>
-                <div class="form-group row">
-                    <label for="name" class="col-2 col-form-label">Name:</label>
-                    <div class="col-10">
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+        <div class="translucent-overlay">
+            <h1 class="booking-heading">Booking</h1>
+            <div class="container">
+                <form>
+                    <div class="form-group row">
+                        <label for="name" class="col-2 col-form-label">Name:</label>
+                        <div class="col-10">
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="email" class="col-2 col-form-label">Email:</label>
-                    <div class="col-10">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    <div class="form-group row">
+                        <label for="email" class="col-2 col-form-label">Email:</label>
+                        <div class="col-10">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="phone-number" class="col-2 col-form-label">Phone:</label>
-                    <div class="col-10">
-                        <input type="tel" class="form-control" id="phone-number" placeholder="Tel.">
+                    <div class="form-group row">
+                        <label for="phone-number" class="col-2 col-form-label">Phone:</label>
+                        <div class="col-10">
+                            <input type="tel" class="form-control" id="phone-number" placeholder="Tel." required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="guests-expected" class="col-2 col-form-label">Guests expected:</label>
-                    <div class="col-10">
-                        <select class="form-control" id="guests-expected">
+                    <div class="form-group row">
+                        <label for="guests-expected" class="col-2 col-form-label">Guests expected:</label>
+                        <div class="col-10">
+                            <select class="form-control" id="guests-expected">
                       <option>1-100</option>
                       <option>100-500</option>
                       <option>500-1000</option>
                       <option>1000+</option>
                     </select>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="additional-info" class="col-2 col-form-label">Additional Info</label>
-                    <div class="col-10">
-                        <textarea class="form-control" id="additional-info" rows="5" placeholder="Additional information (optional)"></textarea>
+                    <div class="form-group row">
+                        <label for="additional-info" class="col-2 col-form-label">Additional Info</label>
+                        <div class="col-10">
+                            <textarea class="form-control" id="additional-info" rows="5" placeholder="Additional information (optional)"></textarea>
+                        </div>
                     </div>
-                </div>
-                <button type="submit" class="btn btn-primary submit-button">Submit</button>
-            </form>
+                    <button type="submit" class="btn btn-primary submit-button">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
 
-    <footer class="footer container row no-gutters">
-        <div class="col-lg-1 offset-lg-10"><a class="social-media" href="#"><span><i class="fab fa-facebook"></i></span></a></div>
-        <div class="col-lg-1 offset-lg-10"><a class="social-media" href="#"><span><i class="fab fa-twitter"></i></span></a></div>
-        <div class="col-lg-1 offset-lg-10"><a class="social-media" href="#"><span><i class="fab fa-instagram"></i></span></a></div>
+    <!-- FOOTER SECTION -->
+
+    <footer class="container-fluid">
+        <div class="row" id="footer-details">
+            <div class="col-sm-4">
+                <p class="inline-block">Copyright - The Smoking Rolo Sideshow 2019</p>
+            </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <!-- Script links -->
@@ -429,7 +474,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    </script>
 </body>
 
 </html>
