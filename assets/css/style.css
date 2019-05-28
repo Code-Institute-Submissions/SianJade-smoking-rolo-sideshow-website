@@ -12,6 +12,47 @@ body {
  background-color: black;
 }
 
+/* ------------ GENERAL ----------*/
+main {
+ position: relative;
+ color: #b5a945;
+}
+
+h2 {
+ font-size: 3em;
+ text-align: center;
+ padding-top: 3%;
+ padding-bottom: 3%;
+ z-index: 5;
+ color: #b5a945;
+ text-shadow: 1px 1px black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
+  color:#fff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+a:hover {
+  color: #fdec6e;
+  text-shadow:0px 0px 30px #fdec6e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
 
 /* ------------ NAVBAR ----------*/
 
@@ -33,7 +74,7 @@ body {
 }
 
 .fa-bars {
- color: blue;
+ color: #b5a945;
  width: 50px;
  z-index: 5;
 }
@@ -41,6 +82,7 @@ body {
 .nav-item {
  padding-left: 5px;
  padding-right: 5px;
+ color: #b5a945;
 }
 
 
@@ -68,21 +110,9 @@ header.jumbotron {
  background-image: url("../images/rocketsilencefield.png");
  background-size: cover;
  background-position: center;
+ padding-bottom: 10%;
 }
 
-.video-container {
- padding: 4% 4% 4% 4%;
-}
-
-.video-heading {
- font-size: 3em;
- text-align: center;
- padding-top: 3%;
- padding-bottom: 3%;
- z-index: 5;
- color: white;
- text-shadow: 1px 1px black;
-}
 
 /* ------------ TOUR DATES ----------*/
 
@@ -91,16 +121,6 @@ header.jumbotron {
  background-size: cover;
  background-attachment: fixed;
  background-position: center;
-}
-
-.tour-heading {
- font-size: 3em;
- text-align: center;
- padding-top: 3%;
- padding-bottom: 3%;
- z-index: 5;
- color: white;
- text-shadow: 1px 1px black;
 }
 
 .table {
@@ -112,6 +132,8 @@ header.jumbotron {
 .table td,
 .table {
  vertical-align: middle;
+ position: relative;
+ z-index: 5;
 }
 
 .date-table {
@@ -129,6 +151,24 @@ a.button {
  text-shadow: none;
 }
 
+.btn {
+ background-color: #b5a945;
+ border-color: #b5a945;
+ color: #18542e;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active .btn:active:focus,
+.btn.active:focus {
+ background-color: #18542e;
+ border-color: #18542e;
+ color: #b5a945;
+ text-shadow: 1px 1px #000;
+}
+
 
 /* ------------ ABOUT ----------*/
 
@@ -141,17 +181,6 @@ a.button {
  margin: 0;
  z-index: 1
 }
-
-.about-heading {
- font-size: 3em;
- text-align: center;
- padding-top: 3%;
- padding-bottom: 3%;
- z-index: 5;
- color: white;
- text-shadow: 1px 1px black;
-}
-
 
 .member {
  text-align: center;
@@ -166,9 +195,20 @@ a.button {
  margin: 0 auto;
 }
 
+hr {
+ border: 0;
+ position: relative;
+ z-index: 5;
+ display: block;
+ width: 100%;
+ background-color: white;
+ height: 1px;
+}
+
 .card-about {
  padding-left: 15px;
  padding-right: 15px;
+ padding-bottom: 0;
 }
 
 .member-photo {
@@ -213,16 +253,6 @@ a.button {
  background-position: center;
 }
 
-.music-heading {
- font-size: 3em;
- text-align: center;
- padding-top: 3%;
- padding-bottom: 3%;
- z-index: 5;
- color: white;
- text-shadow: 1px 1px black;
-}
-
 .card {
  z-index: 5;
  text-align: center;
@@ -255,19 +285,11 @@ a.button {
  background-position: center;
 }
 
-.gallery-heading {
- font-size: 3em;
- text-align: center;
- padding-top: 3%;
- padding-bottom: 3%;
- z-index: 5;
- color: white;
- text-shadow: 1px 1px black;
-}
-
 .img-fluid {
  max-width: 100%;
  height: auto;
+ position: relative;
+ z-index: 5;
 }
 
 .row .fb-row {
@@ -290,32 +312,60 @@ a.button {
  padding: 0;
 }
 
-.booking-heading {
- font-size: 3em;
- text-align: center;
- padding-top: 3%;
- padding-bottom: 3%;
+.form-control {
+ position: relative;
  z-index: 5;
- color: white;
- text-shadow: 1px 1px black;
 }
 
-.submit-button {
+.form-control:focus {
+ border-color: #b5a945;
+ box-shadow: 0px 1px 5px #b5a945 inset, 0px 0px 10px #b5a945;
+}
+
+.submit-button.btn {
  margin: auto;
  display: block;
+ background-color: #b5a945;
+ position: relative;
+ z-index: 5;
+ border-color: #b5a945;
 }
 
 /* ------------ FOOTER ----------*/
 
-.footer {
- background-color: transparent;
- display: block;
+footer {
+ background-color: #000;
+ color: #18542e;
+ min-height: 120px;
+ margin: 0;
 }
 
-.fab {
- display: block;
- float: right;
+.social-links {
+ padding-bottom: 15px;
 }
+
+.social-links li a i:hover {
+ background-color: #ded188;
+ text-shadow: 1px 1px black;
+ font-weight: bold;
+}
+
+.social-links li a i {
+ width: 32px;
+ height: 32px;
+ padding: 12px 0;
+ border-radius: 50%;
+ font-size: 16px;
+ line-height: 8px;
+ text-align: center;
+ color: #b5a945;
+ background: #18542e;
+ transition: all 0.35s ease-in-out;
+ -o-transition: all 0.35s ease-in-out;
+ -webkit-transition: all 0.35s ease-in-out;
+ -moz-transition: all 0.35s ease-in-out;
+}
+
 
 /*----------------- MEDIA QUERIES -----------------*/
 
@@ -331,11 +381,14 @@ a.button {
  }
 
  td {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: normal;
+  padding-right: 10px;
  }
 
  .button {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: normal;
  }
 
  .row .fb-row {
@@ -352,10 +405,10 @@ a.button {
   padding: 5px;
  }
 
- 
-p.member-bio {
+
+ p.member-bio {
   font-size: 20px;
-  width : 100%;
+  width: 100%;
   padding: 0;
   margin-right: 0;
   text-align: center;
@@ -370,12 +423,35 @@ p.member-bio {
  td {
   font-size: 20px;
  }
+  hr {
+  display: none;
+ }
+ img.member-photo {
+  padding-top: 5%;
+ }
+ .member-bio {
+  padding: 0;
+ }
 }
 
 /* ------------ LARGE DEVICES ----------*/
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1000px) {
+ hr {
+  display: none;
+ }
+ .member-bio {
+  padding: 0;
+ }
+}
 
 /* ------------ EXTRA LARGE DEVICES ----------*/
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+ hr {
+  display: none;
+ }
+  .member-bio {
+  padding: 0;
+ }
+}
