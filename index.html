@@ -13,43 +13,44 @@
 </head>
 
 <body>
-    <main>
-        <!-- JUMBOTRON AND NAVBAR -->
-        <header class="jumbotron">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">The Smoking<br>Rolo Sideshow</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- JUMBOTRON AND NAVBAR -->
+    <header class="jumbotron">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">The Smoking<br>Rolo Sideshow</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#video">Video</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#tour">Tour</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#music">Music</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#photo-gallery">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#booking">Booking</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tour">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#music">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#photo-gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Booking</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="translucent-overlay">
+        
         <!-- VIDEO SECTION -->
 
-        <section class="video translucent-overlay" id="video">
+        <section class="video" id="video">
             <h2><a href="#">Videographic</a></h2>
             <div class="col-10 offset-1 embed-responsive embed-responsive-16by9">
                 <iframe width="560" height="315" class="mx-auto" src="https://www.youtube.com/embed/ZvMOFg_DwBE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -59,7 +60,7 @@
 
         <!-- TOUR DATE SECTION -->
 
-        <section class="tour translucent-overlay" id="tour">
+        <section class="tour" id="tour">
             <h2><a href "#">Tour Dates</a></h2>
             <div class="container-fluid tourdates-table table-responsive-sm row">
                 <table class="table date-table col-sm-12">
@@ -131,18 +132,15 @@
 
         <!-- ABOUT SECTION -->
 
-        <section class="about container-fluid translucent-overlay" id="about">
+        <section class="about container-fluid" id="about">
             <h2><a href "#">About</a></h2>
             <div class="card-deck row justify-content-center mb-2">
                 <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
                     <div class="card bg-transparent text-center member">
-                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" 
-                            src="assets/images/bg-h600.jpg" alt="Ben Greener">
+                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/bg-h600.jpg" alt="Ben Greener">
                         <div class="card-body card-about mx-auto">
                             <h3 class="card-title name-instrument">Ben Greener - Vocals/Guitar</h3>
-                            <p class="card-text member-bio">Ben is the main songwriter for The Smoking Rolo Sideshow, co-writing 
-                                the first album with Greig Waugh and the second album by himself. He cites his influences as Mark Lanegan,
-                                Elvis Costello, and Death From Above.
+                            <p class="card-text member-bio">Ben is the main songwriter for The Smoking Rolo Sideshow, co-writing the first album with Greig Waugh and the second album by himself. He cites his influences as Mark Lanegan, Elvis Costello, and Death From Above.
                             </p>
                         </div>
                     </div>
@@ -150,13 +148,11 @@
                 <hr>
                 <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
                     <div class="card bg-transparent text-center member">
-                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" 
-                            src="assets/images/km-h600.jpg" alt="Kev McEwan">
+                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/km-h600.jpg" alt="Kev McEwan">
                         <div class="card-body card-about mx-auto">
                             <h3 class="card-title name-instrument">Kevin McEwan - Lead Guitar/Vocals</h3>
-                            <p class="card-text member-bio">Kev began playing live shows with his first band "Placid Blue" at the 
-                                age of fifteen, and hasn't stopped playing since. His influences include Sonic Youth, Butthole Surfers, 
-                                and Nirvana, bringing a raw and unpredictable edge to the sound of the band.
+                            <p class="card-text member-bio">Kev began playing live shows with his first band "Placid Blue" at the age of fifteen, and hasn't stopped playing since. His influences include Sonic Youth, Butthole Surfers, and Nirvana, bringing a raw and unpredictable edge
+                                to the sound of the band.
                             </p>
                         </div>
                     </div>
@@ -165,13 +161,10 @@
                 <div class="card-deck row justify-content-center">
                     <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
                         <div class="card bg-transparent text-center member row-2">
-                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" 
-                                src="assets/images/gw-h600.jpg" alt="Greig Waugh">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/gw-h600.jpg" alt="Greig Waugh">
                             <div class="card-body card-about mx-auto">
                                 <h3 class="card-title name-instrument">Greig Waugh - Rhythm Guitar</h3>
-                                <p class="card-text member-bio">Greig is an avid guitar builder, and enjoys experimenting with 
-                                    the potential of analogue and digital music. His influences include Kyuss, Primus, Grinderman, 
-                                    and Stephen Brodsky's Octave Museum.
+                                <p class="card-text member-bio">Greig is an avid guitar builder, and enjoys experimenting with the potential of analogue and digital music. His influences include Kyuss, Primus, Grinderman, and Stephen Brodsky's Octave Museum.
                                 </p>
                             </div>
                         </div>
@@ -179,54 +172,46 @@
                     <hr>
                     <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
                         <div class="card bg-transparent text-center member row-2">
-                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" 
-                                src="assets/images/jf-h600.jpg" alt="Jonathan Frith">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/jf-h600.jpg" alt="Jonathan Frith">
                             <div class="card-body card-about mx-auto">
                                 <h3 class="card-title name-instrument">Jonathan Frith - Bass Guitar</h3>
-                                <p class="card-text member-bio">Jonathan switched from lead guitar to bass as a teenager, and 
-                                    his playing style helps drive the band's complex sound. His influences include Foo Fighters, 
-                                    Queens of the Stone Age, and Band of Horses.
+                                <p class="card-text member-bio">Jonathan switched from lead guitar to bass as a teenager, and his playing style helps drive the band's complex sound. His influences include Foo Fighters, Queens of the Stone Age, and Band of Horses.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            <hr>
-            <div class="card-deck row justify-content-center">
-                <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
-                    <div class="card bg-transparent text-center member row-3">
-                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" 
-                            src="assets/images/march-h600.jpg" alt="Michael Archbold">
-                        <div class="card-body card-about mx-auto">
-                            <h3 class="card-title name-instrument">Michael Archbold - Keyboards</h3>
-                            <p class="card-text member-bio">Michael began playing drums in high school while dabbling with the keyboards, 
-                                before making the switch full-time with a variety of funk and soul bands around Nottingham. His influences
-                                include Money Mark, Ray Manzarek, andBooker T. Jones.
-                            </p>
+                <hr>
+                <div class="card-deck row justify-content-center">
+                    <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+                        <div class="card bg-transparent text-center member row-3">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/march-h600.jpg" alt="Michael Archbold">
+                            <div class="card-body card-about mx-auto">
+                                <h3 class="card-title name-instrument">Michael Archbold - Keyboards</h3>
+                                <p class="card-text member-bio">Michael began playing drums in high school while dabbling with the keyboards, before making the switch full-time with a variety of funk and soul bands around Nottingham. His influences include Money Mark, Ray Manzarek,
+                                    andBooker T. Jones.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
-                    <div class="card bg-transparent text-center member row-3">
-                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3"
-                            src="assets/images/mash-h600.jpg" alt="Michael Ashurst">
-                        <div class="card-body card-about mx-auto">
-                            <h3 class="card-title name-instrument">Michael Ashurst - Drums</h3>
-                            <p class="card-text member-bio">"Mick the Stick" is an Amble lad, and longtime collaborator with Kevin McEwan
-                                (being the drummer for Placid Blue in the early 2000s). Michael's influences include Zebrahead, Less than Jake, 
-                                and Reel Big Fish.
-                            </p>
+                    <hr>
+                    <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+                        <div class="card bg-transparent text-center member row-3">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/mash-h600.jpg" alt="Michael Ashurst">
+                            <div class="card-body card-about mx-auto">
+                                <h3 class="card-title name-instrument">Michael Ashurst - Drums</h3>
+                                <p class="card-text member-bio">"Mick the Stick" is an Amble lad, and longtime collaborator with Kevin McEwan (being the drummer for Placid Blue in the early 2000s). Michael's influences include Zebrahead, Less than Jake, and Reel Big Fish.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
         </section>
 
         <!-- MUSIC SECTION -->
 
-        <section class="music container-fluid translucent-overlay" id="music">
+        <section class="music container-fluid" id="music">
             <h2><a href "#">Music</a></h2>
             <div class="card-deck row justify-content-around">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
@@ -319,10 +304,10 @@
 
         <!-- GALLERY SECTION -->
 
-        <section class="gallery container-fluid translucent-overlay" id="photo-gallery">
+        <section class="gallery container-fluid" id="photo-gallery">
             <h2><a href "#">Gallery</a></h2>
             <div class="row justify-content-center fb-row">
-                <div class="col-lg-3 col-md-4 fancybox">
+                <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
                     <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/benguitar1.JPG">
                             <img class="img-fluid img-responsive thumbnail" src="assets/images/benguitar1thumb.jpg" alt="ben and guitar">
@@ -334,59 +319,59 @@
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/live.JPG">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/live-thumb.jpg"  alt="live band">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/blue-sil.JPG">
+                            <img class="img-fluid img-responsive thumbnail landscape" src="assets/images/blue-sil.JPG"  alt="live band">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 fancybox">
+                <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/yellow-sil.JPG">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/yellow-sil.JPG"  alt="This not That shoot">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot2.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot2.jpg"  alt="This not That shoot">
                         </a>
                     </div>
                     <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/practice.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/practice-thumb.jpg"  alt="band practice">
-                        </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                            <img class="img-fluid img-responsive thumbnail landscape" src="assets/images/practice.jpg"  alt="band practice">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 fancybox">
+                <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
                     <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/rob-greg-paul-thumb.jpg"  alt="Rob, Greg, and Paul">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/rob-greg-paul.jpg"  alt="Rob, Greg, and Paul">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/green-sil.JPG">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/green-sil.JPG"  alt="This not That shoot">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot3.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot3.jpg"  alt="This not That shoot">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 d-none d-lg-block fancybox">
+                <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
                     <div class="text-center">
                         <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/rob-greg-paul-thumb.jpg"  alt="Rob, Greg, and Paul">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/street.jpg"  alt="Rob, Greg, and Paul">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot4.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot4.jpg"  alt="This not That shoot">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1-thumb.jpg"  alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/blue-yellow-sil.JPG">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/blue-yellow-sil.JPG"  alt="This not That shoot">
                         </a>
                     </div>
                 </div>
@@ -395,7 +380,7 @@
 
         <!-- BOOKING SECTION -->
 
-        <section class="booking container-fluid translucent-overlay" id="booking">
+        <section class="booking container-fluid" id="booking">
             <h2 href "#"><a>Booking</a></h2>
             <form>
                 <div class="form-group row">
@@ -416,12 +401,12 @@
                 <div class="form-group row">
                     <div class="col-10 offset-1">
                         <select class="form-control" id="guests-expected">
-                        <option>Expected number of guests</option>
-                        <option>1-100</option>
-                        <option>100-500</option>
-                        <option>500-1000</option>
-                        <option>1000+</option>
-                    </select>
+                            <option>Expected number of guests</option>
+                            <option>1-100</option>
+                            <option>100-500</option>
+                            <option>500-1000</option>
+                            <option>1000+</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -439,11 +424,10 @@
 
     <footer class="container-fluid">
         <div class="row" id="footer-details">
-            <div class="col-sm-4">
-                <p class="inline-block">Copyright - The Smoking Rolo Sideshow 2019</p>
+            <div class="col-lg-4 col-sm-4">
+                <p class="inline-block pt-4">Copyright - The Smoking Rolo Sideshow 2019</p>
             </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Social</h5>
+            <div class="col-lg-4 offset-lg-10">
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a target="_blank" href="#">

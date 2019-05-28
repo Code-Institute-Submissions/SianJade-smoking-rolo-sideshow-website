@@ -13,9 +13,14 @@ body {
 }
 
 /* ------------ GENERAL ----------*/
+
 main {
  position: relative;
  color: #b5a945;
+ background-image: url("../images/rocketsilencehero.png");
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center;
 }
 
 h2 {
@@ -24,34 +29,32 @@ h2 {
  padding-top: 3%;
  padding-bottom: 3%;
  z-index: 5;
+ position: relative;
  color: #b5a945;
  text-shadow: 1px 1px black;
 }
 
 a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-  color: #fff;
+ text-decoration: none;
+ position: relative;
+ color: #b5a945;
 }
 
 a {
-  color:#fff;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+ color: #b5a945;
+ -moz-transition: all 0.2s ease-in;
+ -o-transition: all 0.2s ease-in;
+ -webkit-transition: all 0.2s ease-in;
+ transition: all 0.2s ease-in;
 }
 
 a:hover {
-  color: #fdec6e;
-  text-shadow:0px 0px 30px #fdec6e;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+ color: #fdec6e;
+ text-shadow: 0px 0px 30px #fdec6e;
+ -moz-transition: all 0.2s ease-in;
+ -o-transition: all 0.2s ease-in;
+ -webkit-transition: all 0.2s ease-in;
+ transition: all 0.2s ease-in;
 }
 
 /* ------------ NAVBAR ----------*/
@@ -106,22 +109,12 @@ header.jumbotron {
 
 /* ------------ VIDEO ----------*/
 
-.video {
- background-image: url("../images/rocketsilencefield.png");
- background-size: cover;
- background-position: center;
- padding-bottom: 10%;
+iframe {
+ position: relative;
+ z-index: 5;
 }
-
 
 /* ------------ TOUR DATES ----------*/
-
-.tour {
- background-image: url("../images/rocketsilenceboat.png");
- background-size: cover;
- background-attachment: fixed;
- background-position: center;
-}
 
 .table {
  position: relative;
@@ -171,16 +164,6 @@ a.button {
 
 
 /* ------------ ABOUT ----------*/
-
-.about {
- background-image: url("../images/rocketsilenceboat.png");
- background-size: cover;
- background-attachment: fixed;
- background-position: center;
- padding: 0;
- margin: 0;
- z-index: 1
-}
 
 .member {
  text-align: center;
@@ -246,13 +229,6 @@ hr {
 
 /* ------------ MUSIC ----------*/
 
-.music {
- background-image: url("../images/rocketsilenceboat.png");
- background-size: cover;
- background-attachment: fixed;
- background-position: center;
-}
-
 .card {
  z-index: 5;
  text-align: center;
@@ -278,13 +254,6 @@ hr {
 
 /* ------------ GALLERY ----------*/
 
-.gallery {
- background-image: url("../images/rocketsilencehero.png");
- background-size: cover;
- background-attachment: fixed;
- background-position: center;
-}
-
 .img-fluid {
  max-width: 100%;
  height: auto;
@@ -302,15 +271,6 @@ hr {
 }
 
 /* ------------ CONTACT ----------*/
-
-.booking {
- background-image: url("../images/rocketsilencefield.png");
- background-size: cover;
- background-attachment: fixed;
- background-position: center;
- margin: 0;
- padding: 0;
-}
 
 .form-control {
  position: relative;
@@ -338,10 +298,11 @@ footer {
  color: #18542e;
  min-height: 120px;
  margin: 0;
+ clear: both;
 }
 
-.social-links {
- padding-bottom: 15px;
+.copyright {
+ vertical-align: middle;
 }
 
 .social-links li a i:hover {
@@ -414,6 +375,19 @@ footer {
   text-align: center;
  }
 
+
+ hr {
+  display: block;
+ }
+
+ .thumbnail {
+  float: left;
+  width: 33.33%;
+  height: 125px;
+  padding-left: 5px;
+  padding-right: 5px;
+ }
+
 }
 
 /* ------------ MEDIUM DEVICES ----------*/
@@ -423,7 +397,7 @@ footer {
  td {
   font-size: 20px;
  }
-  hr {
+ hr {
   display: none;
  }
  img.member-photo {
@@ -431,6 +405,14 @@ footer {
  }
  .member-bio {
   padding: 0;
+ }
+ .row-2 {
+  padding-left: 2%;
+  padding-right: 2%;
+ }
+ .thumbnail {
+  width: 250px;
+  height: 275px;
  }
 }
 
@@ -443,6 +425,17 @@ footer {
  .member-bio {
   padding: 0;
  }
+
+ .row-2,
+ .row-3 {
+  padding-left: 2%;
+  padding-right: 2%;
+ }
+
+ .thumbnail {
+  width: 350px;
+  height: 375px;
+ }
 }
 
 /* ------------ EXTRA LARGE DEVICES ----------*/
@@ -451,7 +444,12 @@ footer {
  hr {
   display: none;
  }
-  .member-bio {
+ .member-bio {
   padding: 0;
+ }
+ .row-2,
+ .row-3 {
+  padding-left: 2%;
+  padding-right: 2%;
  }
 }
