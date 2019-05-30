@@ -56,7 +56,7 @@
         <!-- VIDEO SECTION -->
 
         <section class="video jp" id="video">
-            <h2><a href="#">ビデオグラフィック</a></h2>
+            <h2><a href="#" class="japanese-heading">ビデオグラフィック</a></h2>
             <div class="col-10 offset-1 embed-responsive embed-responsive-16by9">
                 <iframe width="560" height="315" class="mx-auto" src="https://www.youtube.com/embed/ZvMOFg_DwBE" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -67,7 +67,7 @@
         <!-- TOUR DATE SECTION -->
 
         <section class="tour jp" id="tour">
-            <h2><a href "#">ツアー日程</a></h2>
+            <h2><a href "#" class="japanese-heading">ツアー日程</a></h2>
             <div class="container-fluid tourdates-table table-responsive-sm row">
                 <table class="table date-table col-sm-12">
                     <tbody>
@@ -138,8 +138,8 @@
 
         <!-- ABOUT SECTION -->
 
-        <section class="about container-fluid jp" id="about">
-            <h2><a href "#">私たちに関しては</a></h2>
+        <section class="about container-fluid" id="about">
+            <h2><a href "#" class="japanese-heading">私たちに関しては</a></h2>
             <div class="card-deck row justify-content-center mb-2">
                 <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
                     <div class="card bg-transparent text-center member">
@@ -216,7 +216,7 @@
         <!-- MUSIC SECTION -->
 
         <section class="music container-fluid jp" id="music">
-            <h2><a href "#">音楽</a></h2>
+            <h2><a href "#" class="japanese-heading">音楽</a></h2>
             <div class="card-deck row justify-content-around">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="card bg-transparent">
@@ -309,7 +309,7 @@
         <!-- GALLERY SECTION -->
 
         <section class="gallery container-fluid jp" id="photo-gallery">
-            <h2><a href "#">画廊</a></h2>
+            <h2><a href "#" class="japanese-heading">画廊</a></h2>
             <div class="row justify-content-center fb-row">
                 <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
                     <div class="text-center">
@@ -385,7 +385,7 @@
         <!-- BOOKING SECTION -->
 
         <section class="booking container-fluid jp" id="booking">
-            <h2 href "#"><a>前売り</a></h2>
+            <h2 href "#" class="japanese-heading"><a>前売り</a></h2>
             <form>
                 <div class="form-group row">
                     <div class="col-10 offset-1">
@@ -415,7 +415,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-10 offset-1">
-                        <textarea class="form-control" id="additional-info" rows="5" placeholder="追加情報（オプション"></textarea>
+                        <textarea class="form-control" id="additional-info" rows="5" placeholder="追加情報（オプション)"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn submit-button">申し出る</button>
@@ -429,7 +429,7 @@
     <footer class="container-fluid">
         <div class="row" id="footer-details">
             <div class="col-lg-4 col-sm-4">
-                <p class="inline-block pt-4 jp">コピーライト - The Smoking Rolo Sideshow 2019</p>
+                <p class="inline-block pt-4">コピーライト - The Smoking Rolo Sideshow 2019</p>
             </div>
             <div class="col-lg-4 offset-lg-10">
                 <ul class="list-inline social-links">
@@ -467,6 +467,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+     
+    <script type="text/javascript">
+    /* global $ */
+        $(document).ready(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
