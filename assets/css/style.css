@@ -147,6 +147,10 @@ audio:hover,
  padding: 0;
 }
 
+.nav-image {
+ width: 25%;
+}
+
 .nav-item {
  padding-left: 5px;
  padding-right: 5px;
@@ -154,12 +158,13 @@ audio:hover,
  color: #b5a945;
 }
 
+
 .flag {
  height: 25px;
  width: 30px;
  border-color: transparent;
  background-color: transparent;
- vertical-align: middle;
+ text-align: center;
  border-radius: 5px;
 }
 
@@ -172,20 +177,22 @@ a.japanese,
  z-index: 6;
 }
 
+
 .tooltip-inner {
  background-color: #233F29;
  color: #b5a945;
  text-shadow: 1px 1px black;
 }
 
-.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before {
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip.bs-tooltip-left .arrow::before {
  border-left-color: #233F29;
 }
 
 /* ------------ JUMBOTRON ----------*/
 
 .jumbotron {
- background-image: url("../images/band-header-sm.jpg");
+ background-image: url("../images/header-image.jpg");
  background-attachment: fixed;
  border-radius: 0;
  background-size: cover;
@@ -193,7 +200,7 @@ a.japanese,
  background-position: center;
  padding: 0;
  margin: 0;
- height: 90vh;
+ height: 93vh;
 }
 
 /* ------------ VIDEO ----------*/
@@ -277,20 +284,19 @@ hr {
 }
 
 .card-about {
- padding-left: 15px;
- padding-right: 15px;
+padding: 5px;
  padding-bottom: 0;
 }
 
-.member-photo {
+.member-photo.img-fluid {
  width: 450px;
  height: 600px;
 }
 
 .member-bio {
- padding-left: 10%;
- padding-right: 10%;
+ padding: 0;
  font-size: 18px;
+ text-align: center;
  text-shadow: 1px 1px black;
 }
 
@@ -371,14 +377,29 @@ audio {
 
 footer {
  background-color: #000;
- color: #18542e;
- min-height: 120px;
+ color: #b5a945;
+ height: 30px;
  margin: 0;
  border-color: #000;
 }
 
-.copyright {
- vertical-align: middle;
+.list-inline {
+ padding-top: 15px;
+}
+
+.footer-row {
+ height: 100px;
+ background-color: #000;
+}
+
+p.copyright {
+  margin-bottom: 0;
+}
+
+.social-links {
+ padding-bottom: 10px;
+  margin-bottom: 0;
+  padding-right: 5px;
 }
 
 .social-links li a {
@@ -417,57 +438,31 @@ footer {
   width: 100%;
  }
  .navbar-brand {
-  width: 300px;
+  width: 250px;
+  margin-right: 0;
   padding-left: 5px;
   padding-top: 5px;
  }
-
- .navbar-nav {
-  padding-right: 0;
+ .fa.fa-bars {
+  padding-top: 5px;
+ }
+ .heading {
+  width: 90%;
+ }
+ 
+ .about h2 img,
+ .music h2 img {
+  width: 65%;
  }
 
- .date-table {
-  text-align: center;
-  margin: auto;
-  color: #ffffff;
-  font-weight: bold;
-  text-shadow: 2px 1px black;
+ .japanese-heading {
+  font-size: 2.2rem
  }
-
- td {
-  font-size: 17px;
-  font-weight: normal;
-  padding-right: 10px;
- }
-
- .button {
-  font-size: 17px;
-  font-weight: normal;
- }
-
- .row .fb-row {
-  padding-left: 5px;
-  padding-right: 5px;
- }
-
+ 
  .card-img-top {
   padding-left: 2.5%;
   padding-right: 2.5%;
  }
-
- .card-title {
-  padding: 5px;
- }
-
-
- p.member-bio {
-  font-size: 20px;
-  width: 100%;
-  padding: 0;
-  margin-right: 0;
-  text-align: center;
- }
-
 
  hr {
   display: block;
@@ -477,48 +472,63 @@ footer {
   float: left;
   width: 33.33%;
   height: 125px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
  }
-
+ 
+ .footer-row {
+  height: 120px;
+ }
+ 
+ .copyright {
+  padding-left: 7.5%;
+ }
+ 
+ .social-links {
+ margin-left: 10%;
+ }
+ 
 }
-
 /* ------------ MEDIUM DEVICES ----------*/
 
-@media screen and (min-width:600px) {
+ @media screen and (min-width:600px) {
  .brand-image {
   width: 100%;
  }
+
  .navbar-brand {
   width: 400px;
   padding-left: 5px;
   padding-top: 5px;
  }
- td {
-  font-size: 20px;
- }
+ 
  hr {
   display: none;
  }
+ 
  img.member-photo {
   padding-top: 5%;
  }
- .member-bio {
-  padding: 0;
- }
- .row-2 {
-  padding-left: 2%;
-  padding-right: 2%;
- }
+ 
  .thumbnail {
   width: 250px;
   height: 275px;
+ }
+ 
+ .copyright {
+  padding-top: 3%;
+  margin-left: 3px;
+ }
+ 
+ .social-links {
+  padding-top: 2.5%;
+ margin-left: auto;
+ margin-right: 3px;
  }
 }
 
 /* ------------ LARGE DEVICES ----------*/
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1025px) {
 
  .brand-image {
   width: 100%;
@@ -532,15 +542,6 @@ footer {
  hr {
   display: none;
  }
- .member-bio {
-  padding: 0;
- }
-
- .row-2,
- .row-3 {
-  padding-left: 2%;
-  padding-right: 2%;
- }
 
  .thumbnail {
   width: 350px;
@@ -553,14 +554,5 @@ footer {
 @media only screen and (min-width: 1200px) {
  hr {
   display: none;
- }
-
- .member-bio {
-  padding: 0;
- }
- .row-2,
- .row-3 {
-  padding-left: 2%;
-  padding-right: 2%;
  }
 }

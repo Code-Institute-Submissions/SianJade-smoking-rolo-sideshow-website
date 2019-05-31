@@ -16,8 +16,10 @@
     
     <!-- NAVBAR AND JUMBOTRON -->
     
-    <nav class="navbar sticky-top navbar-expand-lg" id="scroll-nav">
-        <a class="navbar-brand" href="#"><img src="assets/images/brand-uppercase-bold.svg" class="img-responsive brand-image"></a>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/brand.svg" alt="brand" class="img-responsive brand-image">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" 
         aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
@@ -25,7 +27,7 @@
         <div class="collapse navbar-collapse text-right" id="navbarToggle">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#video"><img src="assets/images/videographic-uppercase-bold.svg" class="nav-image"></a>
+                    <a class="nav-link" href="#video">Videographic</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#tour">Tour</a>
@@ -42,10 +44,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#booking">Booking</a>
                 </li>
-                <a href="japan.html" class="bg-transparent japanese">
-                    <img src="assets/images/japan-button.jpg" class="flag tooltip-primary" 
-                    data-toggle="tooltip" data-placement="left" title="Visit our Japanese website">
-                </a>
+                <li>
+                    <a href="japan.html" class="bg-transparent japanese">
+                        <img src="assets/images/japan-button.jpg" class="flag tooltip-primary" data-toggle="tooltip" 
+                        data-placement="left" title="Visit our Japanese website" style="margin-top:7px">
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -57,7 +61,7 @@
     <!-- VIDEO SECTION -->
 
         <section class="video" id="video">
-            <h2><img src="assets/images/videographic-uppercase-bold.svg" class="img-responsive heading"></h2>
+            <h2><img src="assets/images/videographic.svg" class="img-responsive heading" alt="section title"></h2>
             <div class="col-10 offset-1 embed-responsive embed-responsive-16by9">
                 <iframe width="560" height="315" class="mx-auto" src="https://www.youtube.com/embed/ZvMOFg_DwBE" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -68,7 +72,7 @@
     <!-- TOUR DATE SECTION -->
 
         <section class="tour" id="tour">
-            <h2><a href "#">Tour Dates</a></h2>
+            <h2><img src="assets/images/tour-dates.svg" class="img-responsive heading" alt="section title"></h2>
             <div class="container-fluid tourdates-table table-responsive-sm row">
                 <table class="table date-table col-sm-12">
                     <tbody>
@@ -137,14 +141,14 @@
             </div>
         </section>
 
-        <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTION -->
 
         <section class="about container-fluid" id="about">
-            <h2><a href "#">About</a></h2>
+            <h2><img src="assets/images/about.svg" class="img-responsive heading" alt="section title"></h2>
             <div class="card-deck row justify-content-center mb-2">
                 <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
                     <div class="card bg-transparent text-center member">
-                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/bg-h600.jpg" 
+                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/SRS_BG.jpg" 
                         alt="Ben Greener">
                         <div class="card-body card-about mx-auto">
                             <h3 class="card-title name-instrument">Ben Greener - Vocals/Guitar</h3>
@@ -158,7 +162,7 @@
                 <hr>
                 <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
                     <div class="card bg-transparent text-center member">
-                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/km-h600.jpg" 
+                        <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/SRS_KM.jpg" 
                         alt="Kev McEwan">
                         <div class="card-body card-about mx-auto">
                             <h3 class="card-title name-instrument">Kevin McEwan - Lead Guitar/Vocals</h3>
@@ -169,11 +173,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <hr>
                 <div class="card-deck row justify-content-center">
                     <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
-                        <div class="card bg-transparent text-center member row-2">
-                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/gw-h600.jpg" 
+                        <div class="card bg-transparent text-center member">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/SRS_GW.jpg" 
                             alt="Greig Waugh">
                             <div class="card-body card-about mx-auto">
                                 <h3 class="card-title name-instrument">Greig Waugh - Rhythm Guitar</h3>
@@ -186,8 +191,8 @@
                     </div>
                     <hr>
                     <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
-                        <div class="card bg-transparent text-center member row-2">
-                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/jf-h600.jpg" 
+                        <div class="card bg-transparent text-center member">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/SRS_JF.jpg" 
                             alt="Jonathan Frith">
                             <div class="card-body card-about mx-auto">
                                 <h3 class="card-title name-instrument">Jonathan Frith - Bass Guitar</h3>
@@ -202,8 +207,8 @@
                 <hr>
                 <div class="card-deck row justify-content-center">
                     <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
-                        <div class="card bg-transparent text-center member row-3">
-                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/march-h600.jpg" 
+                        <div class="card bg-transparent text-center member">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/SRS_MArch.jpg" 
                             alt="Michael Archbold">
                             <div class="card-body card-about mx-auto">
                                 <h3 class="card-title name-instrument">Michael Archbold - Keyboards</h3>
@@ -216,8 +221,8 @@
                     </div>
                     <hr>
                     <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
-                        <div class="card bg-transparent text-center member row-3">
-                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive pt-3" src="assets/images/mash-h600.jpg" 
+                        <div class="card bg-transparent text-center member">
+                            <img class="card-img-top member-photo mx-auto img-fluid img-responsive" src="assets/images/SRS_MAsh.jpg" 
                             alt="Michael Ashurst">
                             <div class="card-body card-about mx-auto">
                                 <h3 class="card-title name-instrument">Michael Ashurst - Drums</h3>
@@ -232,12 +237,12 @@
                 </div>
         </section>
 
-        <!-- MUSIC SECTION -->
+    <!-- MUSIC SECTION -->
 
         <section class="music container-fluid" id="music">
-            <h2><a href "#">Music</a></h2>
+            <h2><img src="assets/images/music.svg" class="img-responsive heading" alt="section title"></h2>
             <div class="card-deck row justify-content-around">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/muchoMojoCover.jpg" class="card-img-top pt-2" alt="Album art for Mucho Mojo Baby">
                         <div class="card-body">
@@ -246,7 +251,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top pt-2" alt="Album art for Rocket Silence">
                         <div class="card-body">
@@ -255,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/muchoMojoCover.jpg" class="card-img-top pt-2" alt="Album art for Mucho Mojo Baby">
                         <div class="card-body">
@@ -266,7 +271,7 @@
                 </div>
             </div>
             <div class="card-deck row justify-content-around">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top pt-2" alt="Album art for Rocket Silence">
                         <div class="card-body">
@@ -275,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/muchoMojoCover.jpg" class="card-img-top pt-2" alt="Album art for Mucho Mojo Baby">
                         <div class="card-body">
@@ -284,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top pt-2" alt="Album art for Rocket Silence">
                         <div class="card-body">
@@ -295,7 +300,7 @@
                 </div>
             </div>
             <div class="card-deck row justify-content-around">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/muchoMojoCover.jpg" class="card-img-top pt-2" alt="Album art for Mucho Mojo Baby">
                         <div class="card-body">
@@ -304,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/rocketSilenceCover.jpg" class="card-img-top pt-2" alt="Album art for Rocket Silence">
                         <div class="card-body">
@@ -313,7 +318,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                     <div class="card bg-transparent">
                         <img src="assets/images/muchoMojoCover.jpg" class="card-img-top pt-2" alt="Album art for Mucho Mojo Baby">
                         <div class="card-body">
@@ -325,98 +330,98 @@
             </div>
         </section>
 
-        <!-- GALLERY SECTION -->
+    <!-- GALLERY SECTION -->
 
         <section class="gallery container-fluid" id="photo-gallery">
-            <h2><a href "#">Gallery</a></h2>
+            <h2><img src="assets/images/gallery.svg" class="img-responsive heading" alt="section title"></h2>
             <div class="row justify-content-center fb-row">
                 <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/benguitar.JPG">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/benguitar.JPG" 
-                            alt="ben and guitar">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-1.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-1.jpg" 
+                            alt="Live band">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot1.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot1.jpg"  
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-2.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-2.jpg"  
                             alt="This not That shoot">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/blue-sil.JPG">
-                            <img class="img-fluid img-responsive thumbnail landscape" src="assets/images/blue-sil.JPG"  
-                            alt="live band">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-3.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-3.jpg"  
+                            alt="Kev live">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/yellow-sil.JPG">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/yellow-sil.JPG"  
-                            alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-4.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-4.jpg"  
+                            alt="Frith live">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot2.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot2.jpg"  
-                            alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-5.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-5.jpg"  
+                            alt="Greig live">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/practice.jpg">
-                            <img class="img-fluid img-responsive thumbnail landscape" src="assets/images/practice.jpg"  
-                            alt="band practice">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/rob-greg-paul.jpg"  
-                            alt="Rob, Greg, and Paul">
-                        </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/green-sil.JPG">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/green-sil.JPG"  
-                            alt="This not That shoot">
-                        </a>
-                    </div>
-                    <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot3.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot3.jpg"  
-                            alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-6.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-6.jpg"  
+                            alt="Mick live">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/rob-greg-paul.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/street.jpg"  
-                            alt="Rob, Greg, and Paul">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-7.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-7.jpg"  
+                            alt="Michael live">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/tintshot4.jpg">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/tintshot4.jpg"  
-                            alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-8.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-8.jpg"  
+                            alt="Kev live 2">
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/blue-yellow-sil.JPG">
-                            <img class="img-fluid img-responsive thumbnail" src="assets/images/blue-yellow-sil.JPG"  
-                            alt="This not That shoot">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-9.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-9.jpg"  
+                            alt="Ben guitar">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 fancybox">
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-10.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-10.jpg"  
+                            alt="Young Greig live">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-11.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-11.jpg"  
+                            alt="Grieg and Frith live">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="d-block mb-3" data-fancybox="gallery" data-type="image" href="assets/images/gallery-12.jpg">
+                            <img class="img-fluid img-responsive thumbnail" src="assets/images/gallery-12.jpg"  
+                            alt="Ben silhouette">
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- BOOKING SECTION -->
+    <!-- BOOKING SECTION -->
 
         <section class="booking container-fluid" id="booking">
-            <h2 href "#"><a>Booking</a></h2>
+            <h2><img src="assets/images/booking.svg" class="img-responsive heading" alt="section title"></h2>
             <form>
                 <div class="form-group row">
                     <div class="col-10 offset-1">
@@ -446,9 +451,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-10 offset-1">
-                        <textarea class="form-control" id="additional-info" rows="5" 
-                        placeholder="Additional information (optional)">
-                        </textarea>
+                        <textarea class="form-control" id="additional-info" rows="5" placeholder="Additional information (optional)"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn submit-button">Submit</button>
@@ -460,38 +463,34 @@
     <!-- FOOTER SECTION -->
 
     <footer class="container-fluid">
-        <div class="row" id="footer-details">
-            <div class="col-lg-4 col-sm-4">
-                <p class="inline-block pt-4">Copyright - The Smoking Rolo Sideshow 2019</p>
-            </div>
-            <div class="col-lg-4 offset-lg-10">
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">Youtube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="row footer-row list-inline">
+            <p class="copyright">Copyright - The Smoking Rolo Sideshow 2019</p>
+            <ul class="social-links">
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                        <span class="sr-only">Youtube</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 
@@ -507,7 +506,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
-    <script type="text/javascript">
+    <script>
     /* global $ */
         $(document).ready(function () {
           $('[data-toggle="tooltip"]').tooltip();
