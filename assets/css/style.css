@@ -2,8 +2,8 @@ html,
 body {
  width: 100%;
  height: 100%;
- margin: 0px;
- padding: 0px;
+ margin: 0;
+ padding: 0;
  overflow-x: hidden;
 }
 
@@ -43,7 +43,17 @@ main {
  background: rgba(0, 0, 0, 0.5);
 }
 
-h2 {
+.heading {
+ position: relative;
+ z-index: 5;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 4%;
+ padding-bottom: 4%;
+}
+
+.japanese-heading {
  font-size: 4em;
  text-align: center;
  font-weight: bold;
@@ -126,7 +136,7 @@ audio:hover,
 }
 
 .navbar-brand {
- padding-left: 0px;
+ padding-left: 0;
  padding-top: 10px;
  right: 0;
  position: fixed;
@@ -168,7 +178,7 @@ audio:hover,
  border-radius: 5px;
 }
 
-a.japanese,
+.japanese,
 .english {
  padding-top: 5px;
  padding-left: 5px;
@@ -193,7 +203,6 @@ a.japanese,
 
 .jumbotron {
  background-image: url("../images/header-image.jpg");
- background-attachment: fixed;
  border-radius: 0;
  background-size: cover;
  background-repeat: no-repeat;
@@ -284,14 +293,10 @@ hr {
 }
 
 .card-about {
-padding: 5px;
+ padding: 5px;
  padding-bottom: 0;
 }
 
-.member-photo.img-fluid {
- width: 450px;
- height: 600px;
-}
 
 .member-bio {
  padding: 0;
@@ -325,10 +330,6 @@ audio {
  z-index: 5;
 }
 
-.row .fb-row {
- padding: 0;
-}
-
 .fancybox-item {
  align-items: center;
  flex-wrap: wrap;
@@ -343,6 +344,10 @@ audio {
 .form-control {
  position: relative;
  z-index: 5;
+ min-width: 50%;
+ max-width: 50%;
+ margin: 0 auto;
+ padding: 7px 0;
 }
 
 .form-control:hover,
@@ -388,18 +393,20 @@ footer {
 }
 
 .footer-row {
- height: 100px;
+ height: 75px;
  background-color: #000;
 }
 
-p.copyright {
-  margin-bottom: 0;
+.copyright {
+ margin-bottom: 0;
+ padding-left: 1%;
 }
 
 .social-links {
- padding-bottom: 10px;
-  margin-bottom: 0;
-  padding-right: 5px;
+ margin-bottom: 0;
+ padding-left: 0;
+ padding-right: 1%;
+ margin-left: auto;
 }
 
 .social-links li a {
@@ -443,13 +450,23 @@ p.copyright {
   padding-left: 5px;
   padding-top: 5px;
  }
+
+ .nav-link {
+  padding-right: 2.5%;
+ }
+
+ .flag {
+  margin-right: 2.5%;
+ }
+
  .fa.fa-bars {
   padding-top: 5px;
  }
+
  .heading {
   width: 90%;
  }
- 
+
  .about h2 img,
  .music h2 img {
   width: 65%;
@@ -458,7 +475,7 @@ p.copyright {
  .japanese-heading {
   font-size: 2.2rem
  }
- 
+
  .card-img-top {
   padding-left: 2.5%;
   padding-right: 2.5%;
@@ -474,23 +491,34 @@ p.copyright {
   height: 125px;
   padding: 0 5px;
  }
- 
+
+ .form-control {
+  min-width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 5px 0;
+ }
+
  .footer-row {
   height: 120px;
  }
- 
+
  .copyright {
-  padding-left: 7.5%;
+  position: relative;
+  margin: 0 auto;
  }
- 
+
  .social-links {
- margin-left: 10%;
+  margin-left: auto;
+  margin-right: auto;
  }
- 
+
 }
+
 /* ------------ MEDIUM DEVICES ----------*/
 
- @media screen and (min-width:600px) {
+@media screen and (min-width:600px) {
+
  .brand-image {
   width: 100%;
  }
@@ -500,30 +528,39 @@ p.copyright {
   padding-left: 5px;
   padding-top: 5px;
  }
- 
+
+ .nav-link {
+  padding-right: 2.5%;
+ }
+
+ .flag {
+  margin-right: 1.5%;
+ }
+
+ .fa.fa-bars {
+  padding-top: 5px;
+ }
+
  hr {
   display: none;
  }
- 
+
  img.member-photo {
   padding-top: 5%;
  }
- 
+
  .thumbnail {
   width: 250px;
   height: 275px;
  }
- 
- .copyright {
-  padding-top: 3%;
-  margin-left: 3px;
+
+ .form-control {
+  min-width: 70%;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 5px 0;
  }
- 
- .social-links {
-  padding-top: 2.5%;
- margin-left: auto;
- margin-right: 3px;
- }
+
 }
 
 /* ------------ LARGE DEVICES ----------*/
@@ -547,6 +584,12 @@ p.copyright {
   width: 350px;
   height: 375px;
  }
+
+
+ .form-control {
+  min-width: 50%;
+  max-width: 50%;
+ }
 }
 
 /* ------------ EXTRA LARGE DEVICES ----------*/
@@ -555,4 +598,14 @@ p.copyright {
  hr {
   display: none;
  }
+
+ .member-bio {
+  max-width: 600px;
+ }
+
+ .form-control {
+  min-width: 50%;
+  max-width: 50%;
+ }
+
 }
