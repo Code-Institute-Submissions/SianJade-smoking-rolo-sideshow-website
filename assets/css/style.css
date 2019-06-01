@@ -16,7 +16,7 @@ body {
 main {
  position: relative;
  color: #b5a945;
- background-image: url("../images/rocketsilencehero.png");
+ background-image: url("../images/rocketsilenceherodarker.png");
  background-size: cover;
  background-attachment: fixed;
  background-position: center;
@@ -27,21 +27,7 @@ main {
  font-size: 18px;
 }
 
-.translucent-overlay {
- position: relative;
-}
 
-.translucent-overlay:after {
- content: " ";
- z-index: 2;
- display: block;
- position: absolute;
- height: 100%;
- top: 0;
- left: 0;
- right: 0;
- background: rgba(0, 0, 0, 0.5);
-}
 
 .heading {
  position: relative;
