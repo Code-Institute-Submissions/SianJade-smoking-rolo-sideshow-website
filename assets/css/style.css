@@ -27,8 +27,6 @@ main {
  font-size: 18px;
 }
 
-
-
 .heading {
  position: relative;
  z-index: 5;
@@ -165,8 +163,8 @@ audio:hover,
  margin-top: 7px;
 }
 
-.japanese,
-.english {
+.japan-button,
+.uk-button {
  padding-top: 5px;
  padding-left: 5px;
  padding-right: 5px;
@@ -223,7 +221,8 @@ iframe {
 .date-table {
  color: #ffffff;
  font-weight: normal;
- text-shadow: 1px 1px black;
+ text-shadow: 2px 1px black;
+ font-size: 18px
 }
 
 .tourdates-table.row {
@@ -254,6 +253,17 @@ iframe {
 }
 
 /* ------------ ABOUT ----------*/
+
+.general-bio {
+ text-align: center;
+ width: 85%;
+ max-width: 85%;
+ margin: 0 auto;
+ text-shadow: 2px 1px black;
+ font-size: 18px;
+ color: #fff;
+ padding-bottom: 20px;
+}
 
 .member {
  text-align: center;
@@ -290,11 +300,11 @@ hr {
  padding: 0;
  font-size: 18px;
  text-align: center;
- text-shadow: 1px 1px black;
+ text-shadow: 2px 1px black;
 }
 
 .name-instrument {
- text-shadow: 1px 1px black;
+ text-shadow: 2px 1px black;
 }
 
 /* ------------ MUSIC ----------*/
@@ -426,11 +436,6 @@ footer {
 
 @media screen and (max-width: 600px) {
 
- .jumbotron {
-  background-image: url("../images/mobile-header.jpg");
-  height: 90vh;
- }
-
  .brand-image {
   width: 100%;
  }
@@ -454,8 +459,38 @@ footer {
   padding-top: 5px;
  }
 
+ .jumbotron {
+  background-image: url("../images/mobile-header.jpg");
+  height: 90vh;
+ }
+
+ .video,
+ .gallery,
+ .booking {
+  background-image: url("../images/rocketsilence-mobile.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+ }
+
+ .tour,
+ .about,
+ .music {
+  background-image: url("../images/rocketsilence-hangman.png");
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+ }
+
  .heading {
   padding-top: 25px;
+  width: 75%;
+ }
+
+ .japanese-heading {
+  font-size: 2.2rem
  }
 
  table,
@@ -506,25 +541,21 @@ footer {
   content: "場所:";
  }
 
- .heading {
-  width: 75%;
- }
-
- .music-png {
-  width: 50%;
-  height: 25%;
- }
-
  .about-png {
   width: 65%;
  }
 
+ .general-bio {
+  text-align: center;
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+ }
+ 
  .member-photo {
   width: 75%;
- }
-
- .japanese-heading {
-  font-size: 2.2rem
  }
 
  .card-img-top {
@@ -534,6 +565,11 @@ footer {
 
  hr {
   display: block;
+ }
+
+ .music-png {
+  width: 50%;
+  height: 25%;
  }
 
  .thumbnail {
