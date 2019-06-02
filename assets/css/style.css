@@ -162,6 +162,7 @@ audio:hover,
  background-color: transparent;
  text-align: center;
  border-radius: 5px;
+ margin-top: 7px;
 }
 
 .japanese,
@@ -202,7 +203,6 @@ audio:hover,
 
 iframe {
  position: relative;
- z-index: 5;
 }
 
 /* ------------ TOUR DATES ----------*/
@@ -218,7 +218,6 @@ iframe {
 .table {
  vertical-align: middle;
  position: relative;
- z-index: 5;
 }
 
 .date-table {
@@ -258,7 +257,6 @@ iframe {
 
 .member {
  text-align: center;
- z-index: 5;
  margin: auto;
  width: 100%;
 }
@@ -269,10 +267,13 @@ iframe {
  margin: 0 auto;
 }
 
+.member-photo {
+ width: 50%;
+}
+
 hr {
  border: 0;
  position: relative;
- z-index: 5;
  display: block;
  width: 100%;
  background-color: white;
@@ -299,7 +300,6 @@ hr {
 /* ------------ MUSIC ----------*/
 
 .card {
- z-index: 5;
  text-align: center;
  color: #ffffff;
 }
@@ -314,7 +314,6 @@ audio {
  max-width: 100%;
  height: auto;
  position: relative;
- z-index: 5;
 }
 
 .fancybox-item {
@@ -330,7 +329,6 @@ audio {
 
 .form-control {
  position: relative;
- z-index: 5;
  min-width: 50%;
  max-width: 50%;
  margin: 0 auto;
@@ -428,6 +426,11 @@ footer {
 
 @media screen and (max-width: 600px) {
 
+ .jumbotron {
+  background-image: url("../images/mobile-header.jpg");
+  height: 90vh;
+ }
+ 
  .brand-image {
   width: 100%;
  }
@@ -444,11 +447,16 @@ footer {
 
  .flag {
   margin-right: 2.5%;
+  margin-bottom: 2.5%;
  }
 
  .fa.fa-bars {
   padding-top: 5px;
  }
+ 
+.heading {
+ padding-top: 25px;
+}
 
  table,
  tbody,
@@ -460,12 +468,14 @@ footer {
  td {
   border: none;
   position: relative;
+  color: #fff;
   padding-left: 50%;
   text-align: right;
  }
 
  td:before {
   position: absolute;
+  color: #fff;
   top: 6px;
   left: 6px;
   width: 45%;
@@ -485,12 +495,20 @@ footer {
  }
 
  .heading {
-  width: 90%;
+  width: 75%;
+ }
+ 
+ .music-png {
+  width: 50%;
+  height: 25%;
+ }
+ 
+ .about-png {
+  width: 65%;
  }
 
- .about h2 img,
- .music h2 img {
-  width: 65%;
+ .member-photo {
+  width: 75%;
  }
 
  .japanese-heading {
@@ -541,7 +559,7 @@ footer {
 @media screen and (min-width:600px) {
 
  .brand-image {
-  width: 100%;
+  width: 75%;
  }
 
  .navbar-brand {
@@ -555,7 +573,8 @@ footer {
  }
 
  .flag {
-  margin-right: 1.5%;
+  margin-right: 1%;
+  margin-bottom: 1.5%;
  }
 
  .fa.fa-bars {
@@ -566,8 +585,9 @@ footer {
   display: none;
  }
 
- img.member-photo {
+ .member-photo {
   padding-top: 5%;
+  width: 75%;
  }
 
  .thumbnail {
