@@ -430,7 +430,7 @@ footer {
   background-image: url("../images/mobile-header.jpg");
   height: 90vh;
  }
- 
+
  .brand-image {
   width: 100%;
  }
@@ -453,10 +453,10 @@ footer {
  .fa.fa-bars {
   padding-top: 5px;
  }
- 
-.heading {
- padding-top: 25px;
-}
+
+ .heading {
+  padding-top: 25px;
+ }
 
  table,
  tbody,
@@ -465,7 +465,8 @@ footer {
   display: block;
  }
 
- td {
+ td,
+ .japan-table {
   border: none;
   position: relative;
   color: #fff;
@@ -473,7 +474,8 @@ footer {
   text-align: right;
  }
 
- td:before {
+ td:before,
+ .japan-table:before {
   position: absolute;
   color: #fff;
   top: 6px;
@@ -494,15 +496,25 @@ footer {
   content: "Location:";
  }
 
+ .japan-table:nth-of-type(1):before {
+  content: "年代:";
+ }
+ .japan-table:nth-of-type(2):before {
+  content: "会場:";
+ }
+ .japan-table:nth-of-type(3):before {
+  content: "場所:";
+ }
+
  .heading {
   width: 75%;
  }
- 
+
  .music-png {
   width: 50%;
   height: 25%;
  }
- 
+
  .about-png {
   width: 65%;
  }
