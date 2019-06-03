@@ -4,11 +4,12 @@ body {
  height: 100%;
  margin: 0;
  padding: 0;
- overflow-x: hidden;
 }
 
 body {
  position: relative;
+ overflow-x: hidden;
+ background-color: #111D13;
 }
 
 /* ------------ GENERAL ----------*/
@@ -16,7 +17,7 @@ body {
 main {
  position: relative;
  color: #b5a945;
- background-image: url("../images/rocketsilenceherodarker.png");
+ background-image: url("../images/rocketsilencedarker.png");
  background-size: cover;
  background-attachment: fixed;
  background-position: center;
@@ -29,7 +30,6 @@ main {
 
 .heading {
  position: relative;
- z-index: 5;
  display: block;
  margin-left: auto;
  margin-right: auto;
@@ -46,7 +46,7 @@ main {
  z-index: 5;
  position: relative;
  color: #b5a945;
- text-shadow: 1px 1px black;
+ text-shadow: 2px 1px black;
 }
 
 a:link {
@@ -95,6 +95,15 @@ audio:hover,
  -webkit-transition: all 0.2s ease-in;
 }
 
+.btn {
+ background-color: #18542e;
+ border-color: #18542e;
+ color: #b5a945;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+
+.btn:hover,
 .btn:focus,
 .btn:active,
 .btn:active:focus {
@@ -108,6 +117,10 @@ audio:hover,
 
 /* ------------ NAVBAR ----------*/
 
+.nav {
+ padding: 0 5px;
+}
+
 .navbar {
  background-color: #111D13;
  border-color: transparent;
@@ -115,7 +128,7 @@ audio:hover,
  right: 0;
  border-radius: 0;
  top: 0;
- z-index: 7;
+ padding: 0;
  overflow-x: hidden;
 }
 
@@ -137,21 +150,12 @@ audio:hover,
  z-index: 5;
 }
 
-.navbar {
- padding: 0;
-}
-
-.nav-image {
- width: 25%;
-}
-
 .nav-item {
  padding-left: 5px;
  padding-right: 5px;
  padding-top: 0;
  color: #b5a945;
 }
-
 
 .flag {
  height: 25px;
@@ -171,7 +175,6 @@ audio:hover,
  position: relative;
  z-index: 6;
 }
-
 
 .tooltip-inner {
  background-color: #233F29;
@@ -200,7 +203,7 @@ audio:hover,
 /* ------------ VIDEO ----------*/
 
 iframe {
- position: relative;
+ margin: 0 auto;
 }
 
 /* ------------ TOUR DATES ----------*/
@@ -215,7 +218,6 @@ iframe {
 .table td,
 .table {
  vertical-align: middle;
- position: relative;
 }
 
 .date-table {
@@ -223,33 +225,6 @@ iframe {
  font-weight: normal;
  text-shadow: 2px 1px black;
  font-size: 18px
-}
-
-.tourdates-table.row {
- padding: 0;
- margin: 0;
-}
-
-.btn {
- background-color: #18542e;
- border-color: #18542e;
- color: #b5a945;
- font-weight: bold;
- text-transform: uppercase;
-}
-
-.btn:hover,
-.btn:focus,
-.btn:active .btn:active:focus,
-.btn.active:focus {
- background-color: #b5a945;
- border-color: #b5a945;
- color: #18542e;
- text-shadow: 1px 1px #000;
-}
-
-.btn.j {
- font-weight: bold;
 }
 
 /* ------------ ABOUT ----------*/
@@ -273,28 +248,20 @@ iframe {
 
 .card {
  border: none;
- float: none;
  margin: 0 auto;
+ text-align: center;
+ color: #ffffff;
 }
 
 .member-photo {
  width: 50%;
-}
-
-hr {
- border: 0;
- position: relative;
- display: block;
- width: 100%;
- background-color: white;
- height: 1px;
+ margin: 15px auto;
 }
 
 .card-about {
  padding: 5px;
  padding-bottom: 0;
 }
-
 
 .member-bio {
  padding: 0;
@@ -308,11 +275,6 @@ hr {
 }
 
 /* ------------ MUSIC ----------*/
-
-.card {
- text-align: center;
- color: #ffffff;
-}
 
 audio {
  border-radius: 30px;
@@ -351,26 +313,10 @@ audio {
  box-shadow: 0px 1px 5px #b5a945 inset, 0px 0px 10px #b5a945;
 }
 
-.submit-button.btn:hover,
-.submit-button.btn:focus,
-.submit-button.btn:active .submit-button.btn:active:focus,
-.submit-button.btn:focus {
- background-color: #b5a945;
- border-color: #b5a945;
- color: #18542e;
- text-shadow: 1px 1px #000;
-}
-
-.submit-button.btn {
- background-color: #18542e;
- border-color: #18542e;
- color: #b5a945;
- font-weight: bold;
+.submit-button {
  position: relative;
- z-index: 5;
  margin: 0 auto;
  display: block;
- text-transform: uppercase;
 }
 
 /* ------------ FOOTER ----------*/
@@ -435,10 +381,10 @@ footer {
 /* ------------ SMALL DEVICES ----------*/
 
 @media screen and (max-width: 600px) {
-
  .brand-image {
   width: 100%;
  }
+
  .navbar-brand {
   width: 250px;
   margin-right: 0;
@@ -464,33 +410,22 @@ footer {
   height: 90vh;
  }
 
- .video,
- .gallery,
- .booking {
-  background-image: url("../images/rocketsilence-mobile.png");
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
- }
-
- .tour,
- .about,
- .music {
-  background-image: url("../images/rocketsilence-hangman.png");
-  background-position: center center;
-  background-attachment: scroll;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+ main {
+  background-image: none;
+  background-color: #111D13;
+  padding-bottom: 5%;
  }
 
  .heading {
-  padding-top: 25px;
+  margin-top: 7.5%;
+  margin-bottom: 5%;
   width: 75%;
  }
 
  .japanese-heading {
-  font-size: 2.2rem
+  font-size: 2.2rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
  }
 
  table,
@@ -547,29 +482,34 @@ footer {
 
  .general-bio {
   text-align: center;
-  width: 90%;
-  max-width: 90%;
+  width: 95%;
+  max-width: 95%;
   margin: 0 auto;
   padding-bottom: 30px;
   padding-top: 30px;
  }
- 
+
  .member-photo {
   width: 75%;
  }
 
- .card-img-top {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
- }
-
  hr {
+  border: 0;
+  position: relative;
   display: block;
+  width: 100%;
+  background-color: white;
+  height: 1px;
  }
 
  .music-png {
   width: 50%;
   height: 25%;
+ }
+
+ .album-art {
+  width: 90%;
+  margin: 0 auto;
  }
 
  .thumbnail {
@@ -587,7 +527,7 @@ footer {
  }
 
  .footer-row {
-  height: 120px;
+  height: 100px;
  }
 
  .copyright {
@@ -604,7 +544,7 @@ footer {
 
 /* ------------ MEDIUM DEVICES ----------*/
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:600px) and (max-width:1025px) {
 
  .brand-image {
   width: 75%;
@@ -629,8 +569,29 @@ footer {
   padding-top: 5px;
  }
 
- hr {
-  display: none;
+ .jumbotron {
+  background-image: url("../images/header-image-medium.jpg");
+  height: 90vh;
+ }
+
+ .heading {
+  margin-top: 7.5%;
+  margin-bottom: 5%;
+ }
+
+ .japanese-heading {
+  margin-top: 5%;
+  margin-bottom: 5%;
+ }
+
+ .video img {
+  width: 90%;
+ }
+
+ main {
+  background-image: none;
+  background-color: #111D13;
+  padding-bottom: 5%;
  }
 
  .member-photo {
@@ -638,9 +599,28 @@ footer {
   width: 75%;
  }
 
+ .album-art {
+  width: 85%;
+  margin: 0 auto;
+ }
+
+ audio {
+  width: 100%;
+  margin: 0 auto;
+ }
+
+ hr {
+  border: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: white;
+  height: 1px;
+ }
+
  .thumbnail {
-  width: 250px;
-  height: 275px;
+  width: 260px;
+  height: 265px;
  }
 
  .form-control {
@@ -659,6 +639,7 @@ footer {
  .brand-image {
   width: 100%;
  }
+
  .navbar-brand {
   width: 600px;
   padding-left: 0;
