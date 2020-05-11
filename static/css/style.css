@@ -1,0 +1,671 @@
+html,
+body {
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ position: relative;
+ overflow-x: hidden;
+ background-color: #111613;
+  color: #b5a945;
+}
+
+/* ------------ GENERAL ----------*/
+
+main {
+ position: relative;
+}
+
+.jp {
+ font-weight: bolder;
+ font-size: 18px;
+}
+
+.heading {
+ position: relative;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 4%;
+ padding-bottom: 4%;
+}
+
+.japanese-heading {
+ font-size: 4em;
+ text-align: center;
+ font-weight: bold;
+ padding-top: 3%;
+ padding-bottom: 3%;
+ z-index: 5;
+ position: relative;
+ color: #b5a945;
+ text-shadow: 2px 1px #000;
+}
+
+a:link {
+ text-decoration: none;
+ text-shadow: none;
+ position: relative;
+ color: #b5a945;
+}
+
+a {
+ color: #b5a945;
+ transition: all 0.2s ease-in;
+ -moz-transition: all 0.2s ease-in;
+ -o-transition: all 0.2s ease-in;
+ -webkit-transition: all 0.2s ease-in;
+}
+
+a:hover {
+ color: #fdec6e;
+ text-shadow: 0px 0px 25px #fdec6e;
+ transition: all 0.2s ease-in;
+ -moz-transition: all 0.2s ease-in;
+ -o-transition: all 0.2s ease-in;
+ -webkit-transition: all 0.2s ease-in;
+}
+
+audio,
+.btn,
+.thumbnail,
+.social-links li a {
+ text-decoration: none;
+ transition: all 0.2s ease-in;
+ -moz-transition: all 0.2s ease-in;
+ -o-transition: all 0.2s ease-in;
+ -webkit-transition: all 0.2s ease-in;
+}
+
+.flag:hover,
+audio:hover,
+.btn:hover,
+.thumbnail:hover,
+.social-links li a:hover {
+ box-shadow: 0px 0px 20px #fdec6e;
+ -moz-transition: all 0.2s ease-in;
+ -o-transition: all 0.2s ease-in;
+ -webkit-transition: all 0.2s ease-in;
+}
+
+.btn {
+ background-color: #18542e;
+ border-color: #18542e;
+ color: #b5a945;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:active:focus {
+ background-color: #b5a945;
+ border-color: #b5a945;
+ color: #18542e;
+ outline: none;
+ box-shadow: none;
+ text-shadow: 1px 1px #000;
+}
+
+/* ------------ NAVBAR ----------*/
+
+.nav {
+ padding: 0 5px;
+}
+
+.navbar {
+ background-color: #111D13;
+ border-color: transparent;
+ left: 0;
+ right: 0;
+ border-radius: 0;
+ top: 0;
+ padding: 0;
+ overflow-x: hidden;
+}
+
+.navbar-brand {
+ padding-left: 0;
+ padding-top: 10px;
+ right: 0;
+ position: fixed;
+}
+
+.navbar-nav {
+ padding-top: 0;
+ padding-right: 0;
+}
+
+.fa.fa-bars {
+ color: #b5a945;
+ width: 50px;
+ z-index: 5;
+}
+
+.nav-item {
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-top: 0;
+ color: #b5a945;
+}
+
+.flag {
+ height: 25px;
+ width: 30px;
+ border-color: transparent;
+ background-color: transparent;
+ text-align: center;
+ border-radius: 5px;
+ margin-top: 7px;
+}
+
+.japan-button,
+.uk-button {
+ padding-top: 5px;
+ padding-left: 5px;
+ padding-right: 5px;
+ position: relative;
+ z-index: 6;
+}
+
+.tooltip-inner {
+ background-color: #233F29;
+ color: #b5a945;
+ text-shadow: 1px 1px #000;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip.bs-tooltip-left .arrow::before {
+ border-left-color: #233F29;
+}
+
+/* ------------ JUMBOTRON ----------*/
+
+.jumbotron {
+ background-image: url("../images/header-image.jpg");
+ border-radius: 0;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ padding: 0;
+ margin: 0;
+ height: 93vh;
+}
+
+/* ------------ VIDEO ----------*/
+
+iframe {
+ margin: 0 auto;
+}
+
+/* ------------ TOUR DATES ----------*/
+
+.table {
+ position: relative;
+ width: 100%;
+ border-collapse: collapse;
+ text-align: center;
+}
+
+.table td,
+.table {
+ vertical-align: middle;
+}
+
+.date-table {
+ color: #fff;
+ font-weight: normal;
+ text-shadow: 2px 1px #000;
+ font-size: 18px
+}
+
+/* ------------ ABOUT ----------*/
+
+.general-bio {
+ text-align: center;
+ width: 85%;
+ max-width: 85%;
+ margin: 0 auto;
+ text-shadow: 2px 1px #000;
+ font-size: 18px;
+ color: #fff;
+ padding-bottom: 20px;
+}
+
+.member {
+ text-align: center;
+ margin: auto;
+ width: 100%;
+}
+
+.card {
+ border: none;
+ margin: 0 auto;
+ text-align: center;
+ color: #fff;
+}
+
+.member-photo {
+ width: 50%;
+ margin: 15px auto;
+}
+
+.card-about {
+ padding: 5px;
+ padding-bottom: 0;
+}
+
+.member-bio {
+ padding: 0;
+ font-size: 18px;
+ text-align: center;
+ text-shadow: 2px 1px #000;
+}
+
+.name-instrument {
+ text-shadow: 2px 1px #000;
+}
+
+/* ------------ MUSIC ----------*/
+
+audio {
+ border-radius: 30px;
+}
+
+/* ------------ GALLERY ----------*/
+
+.img-fluid {
+ max-width: 100%;
+ height: auto;
+ position: relative;
+}
+
+.fancybox-item {
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.thumbnail {
+ border-radius: 5px;
+}
+
+/* ------------ CONTACT ----------*/
+
+.form-control {
+ position: relative;
+ min-width: 50%;
+ max-width: 50%;
+ margin: 0 auto;
+ padding: 7px 0;
+}
+
+.form-control:hover,
+.form-control:focus {
+ border-color: #b5a945;
+ box-shadow: 0px 1px 5px #b5a945 inset, 0px 0px 10px #b5a945;
+}
+
+.submit-button {
+ position: relative;
+ margin: 0 auto;
+ display: block;
+}
+
+/* ------------ FOOTER ----------*/
+
+footer {
+ background-color: #111613;;
+ color: #b5a945;
+ height: 55px;
+ margin-top: 10px;
+}
+
+.list-inline {
+ padding-top: 15px;
+}
+
+.copyright {
+ margin-bottom: 0;
+ padding-left: 1%;
+}
+
+.social-links {
+ margin-bottom: 0;
+ padding-left: 0;
+ padding-right: 1%;
+ margin-left: auto;
+}
+
+.social-links li a {
+ border-radius: 50%;
+}
+
+.social-links li a i {
+ width: 32px;
+ height: 32px;
+ padding: 12px 0;
+ border-radius: 50%;
+ font-size: 18px;
+ line-height: 8px;
+ text-align: center;
+ color: #b5a945;
+ background-color: #18542e;
+ transition: all 0.35s ease-in-out;
+ -o-transition: all 0.35s ease-in-out;
+ -webkit-transition: all 0.35s ease-in-out;
+ -moz-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+ background-color: #b5a945;
+ font-weight: bold;
+ color: #18542e;
+}
+
+/*----------------- MEDIA QUERIES -----------------*/
+
+/* ------------ SMALL DEVICES ----------*/
+
+@media screen and (max-width: 600px) {
+ .brand-image {
+  width: 100%;
+ }
+
+ .navbar-brand {
+  width: 250px;
+  margin-right: 0;
+  padding-left: 5px;
+  padding-top: 5px;
+ }
+
+ .nav-link {
+  padding-right: 2.5%;
+ }
+
+ .flag {
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+ }
+
+ .fa.fa-bars {
+  padding-top: 5px;
+ }
+
+ .jumbotron {
+  background-image: url("../images/mobile-header.jpg");
+  height: 90vh;
+ }
+
+ main {
+  background-image: none;
+  background-color: #111D13;
+  padding-bottom: 5%;
+ }
+
+ .heading {
+  margin-top: 7.5%;
+  margin-bottom: 5%;
+  width: 75%;
+ }
+
+ .japanese-heading {
+  font-size: 2.2rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+ }
+
+ table,
+ tbody,
+ td,
+ tr {
+  display: block;
+ }
+
+ td,
+ .japan-table {
+  border: none;
+  position: relative;
+  color: #fff;
+  padding-left: 50%;
+  text-align: right;
+ }
+
+ td:before,
+ .japan-table:before {
+  position: absolute;
+  color: #fff;
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  text-align: left;
+  padding-top: 2%;
+  white-space: nowrap;
+ }
+
+ td:nth-of-type(1):before {
+  content: "Date:";
+ }
+ td:nth-of-type(2):before {
+  content: "Venue:";
+ }
+ td:nth-of-type(3):before {
+  content: "Location:";
+ }
+
+ .japan-table:nth-of-type(1):before {
+  content: "年代:";
+ }
+ .japan-table:nth-of-type(2):before {
+  content: "会場:";
+ }
+ .japan-table:nth-of-type(3):before {
+  content: "場所:";
+ }
+
+ .about-png {
+  width: 65%;
+ }
+
+ .general-bio {
+  text-align: center;
+  width: 95%;
+  max-width: 95%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+ }
+
+ .member-photo {
+  width: 75%;
+ }
+
+ hr {
+  border: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  height: 1px;
+ }
+
+ .music-png {
+  width: 50%;
+  height: 25%;
+ }
+
+ .album-art {
+  width: 90%;
+  margin: 0 auto;
+ }
+
+ .thumbnail {
+  float: left;
+  width: 33.33%;
+  height: 125px;
+  padding: 0 5px;
+ }
+
+ .form-control {
+  min-width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 5px 0;
+ }
+
+ .footer-row {
+  height: 100px;
+ }
+
+ .copyright {
+  position: relative;
+  margin: 0 auto;
+ }
+
+ .social-links {
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+}
+
+/* ------------ MEDIUM DEVICES ----------*/
+
+@media screen and (min-width:600px) and (max-width:1025px) {
+
+ .brand-image {
+  width: 75%;
+ }
+
+ .navbar-brand {
+  width: 400px;
+  padding-left: 5px;
+  padding-top: 5px;
+ }
+
+ .nav-link {
+  padding-right: 2.5%;
+ }
+
+ .flag {
+  margin-right: 1%;
+  margin-bottom: 1.5%;
+ }
+
+ .fa.fa-bars {
+  padding-top: 5px;
+ }
+
+ .jumbotron {
+  background-image: url("../images/header-image-medium.jpg");
+  height: 90vh;
+ }
+
+ .heading {
+  margin-top: 7.5%;
+  margin-bottom: 5%;
+ }
+
+ .japanese-heading {
+  margin-top: 5%;
+  margin-bottom: 5%;
+ }
+
+ .video img {
+  width: 90%;
+ }
+
+ main {
+  background-image: none;
+  background-color: #111D13;
+  padding-bottom: 5%;
+ }
+
+ .member-photo {
+  padding-top: 5%;
+  width: 75%;
+ }
+
+ .album-art {
+  width: 85%;
+  margin: 0 auto;
+ }
+
+ audio {
+  width: 100%;
+  margin: 0 auto;
+ }
+
+ hr {
+  border: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  height: 1px;
+ }
+
+ .thumbnail {
+  width: 260px;
+  height: 265px;
+ }
+
+ .form-control {
+  min-width: 70%;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 5px 0;
+ }
+
+}
+
+/* ------------ LARGE DEVICES ----------*/
+
+@media only screen and (min-width: 1025px) {
+
+ .brand-image {
+  width: 100%;
+ }
+
+ .navbar-brand {
+  width: 600px;
+  padding-left: 0;
+  padding-top: 5px;
+ }
+
+ hr {
+  display: none;
+ }
+
+ .thumbnail {
+  width: 350px;
+  height: 375px;
+ }
+
+
+ .form-control {
+  min-width: 50%;
+  max-width: 50%;
+ }
+}
+
+/* ------------ EXTRA LARGE DEVICES ----------*/
+
+@media only screen and (min-width: 1200px) {
+ hr {
+  display: none;
+ }
+
+ .member-bio {
+  max-width: 600px;
+ }
+
+ .form-control {
+  min-width: 50%;
+  max-width: 50%;
+ }
+
+}
