@@ -9,7 +9,7 @@ body {
 body {
  position: relative;
  overflow-x: hidden;
- background-color: #111D13;
+ background-color: #111613;
 }
 
 /* ------------ GENERAL ----------*/
@@ -17,10 +17,10 @@ body {
 main {
  position: relative;
  color: #b5a945;
- background-image: url("../images/rocketsilencedarker.png");
+ /* background-image: url("../images/rocketsilencedarker.png");
  background-size: cover;
  background-attachment: fixed;
- background-position: center;
+ background-position: center; */
 }
 
 .jp {
@@ -322,20 +322,14 @@ audio {
 /* ------------ FOOTER ----------*/
 
 footer {
- background-color: #000;
+ background-color: #111613;;
  color: #b5a945;
- height: 30px;
- margin: 0;
- border-color: #000;
+ height: 55px;
+ margin-top: 10px;
 }
 
 .list-inline {
  padding-top: 15px;
-}
-
-.footer-row {
- height: 75px;
- background-color: #000;
 }
 
 .copyright {
