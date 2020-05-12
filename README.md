@@ -20,6 +20,23 @@ Included in the About section of the page is a small general overview of the ban
 Social media links for the band are also included in the footer section, so that users can follow these in order to keep up to date with the band's activity and any news.
 
 
+## User stories
+
+### User story 1:
+As a new fan who has only just discovered The Smoking Rolo Sideshow, I would like to find out more information about the band's history and its members.
+
+### User story 2:
+As a Japanese fan of the band who is not well-versed in English, I would like for there to be a version of the site that is accessible and easy for me to read and understand so that I can keep up to date with the band's tours and releases more easily.
+
+### User story 3:
+As an event organiser, I would like for there to be an easy way for me to contact the band for booking enquiries for a festival that I am currently organising.
+
+### User story 4:
+As a new fan of the band, I would like to be able to find and listen to more of their back catalogue of music, as there are only two of their songs available to listen to on YoiTube, and the band's music is not available on platforms such as Spotify or iTunes.
+
+### User story 5:
+As a long-time fan of the band, who likes to go any gigs they play local to me, I would like to be able to view and keep up to date with their upcoming tour dates so that I know in advance if they are going to be playing a show in my area.
+
 ## Features
 ### Existing Features
 
