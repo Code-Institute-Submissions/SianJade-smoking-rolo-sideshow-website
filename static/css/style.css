@@ -186,14 +186,22 @@ audio:hover,
 /* ------------ JUMBOTRON ----------*/
 
 .jumbotron {
- background-image: url("../images/header-image.jpg");
+ background-image: url("/assets/images/rocketsilencedarker.png");
  border-radius: 0;
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
  padding: 0;
  margin: 0;
- height: 93vh;
+ height: 100vh;
+ width: 100vw;
+}
+
+.logo {
+background-image: url("/assets/images/brand.png");
+background-repeat: no-repeat;
+margin: auto auto;
+height: 50px;
 }
 
 /* ------------ VIDEO ----------*/
@@ -366,306 +374,296 @@ footer {
  color: #18542e;
 }
 
+
 /*----------------- MEDIA QUERIES -----------------*/
-
 /* ------------ SMALL DEVICES ----------*/
-
 @media screen and (max-width: 600px) {
- .brand-image {
-  width: 100%;
- }
+    .brand-image {
+     width: 100%;
+    }
 
- .navbar-brand {
-  width: 250px;
-  margin-right: 0;
-  padding-left: 5px;
-  padding-top: 5px;
- }
+    .navbar-brand {
+     width: 250px;
+     margin-right: 0;
+     padding-left: 5px;
+     padding-top: 5px;
+    }
 
- .nav-link {
-  padding-right: 2.5%;
- }
+    .nav-link {
+     padding-right: 2.5%;
+    }
 
- .flag {
-  margin-right: 2.5%;
-  margin-bottom: 2.5%;
- }
+    .flag {
+     margin-right: 2.5%;
+     margin-bottom: 2.5%;
+    }
 
- .fa.fa-bars {
-  padding-top: 5px;
- }
+    .fa.fa-bars {
+     padding-top: 5px;
+    }
 
- .jumbotron {
-  background-image: url("../images/mobile-header.jpg");
-  height: 90vh;
- }
+    .jumbotron {
+     background-image: url("../images/mobile-header.jpg");
+     height: 90vh;
+    }
 
- main {
-  background-image: none;
-  background-color: #111D13;
-  padding-bottom: 5%;
- }
+    main {
+     background-image: none;
+     background-color: #111D13;
+     padding-bottom: 5%;
+    }
 
- .heading {
-  margin-top: 7.5%;
-  margin-bottom: 5%;
-  width: 75%;
- }
+    .heading {
+     margin-top: 7.5%;
+     margin-bottom: 5%;
+     width: 75%;
+    }
 
- .japanese-heading {
-  font-size: 2.2rem;
-  margin-top: 5%;
-  margin-bottom: 5%;
- }
+    .japanese-heading {
+     font-size: 2.2rem;
+     margin-top: 5%;
+     margin-bottom: 5%;
+    }
 
- table,
- tbody,
- td,
- tr {
-  display: block;
- }
+    table,
+    tbody,
+    td,
+    tr {
+    display: block;
+    }
 
- td,
- .japan-table {
-  border: none;
-  position: relative;
-  color: #fff;
-  padding-left: 50%;
-  text-align: right;
- }
+    td,
+    .japan-table {
+     border: none;
+     position: relative;
+     color: #fff;
+     padding-left: 50%;
+     text-align: right;
+    }
 
- td:before,
- .japan-table:before {
-  position: absolute;
-  color: #fff;
-  top: 6px;
-  left: 6px;
-  width: 45%;
-  text-align: left;
-  padding-top: 2%;
-  white-space: nowrap;
- }
+    td:before,
+    .japan-table:before {
+     position: absolute;
+     color: #fff;
+     top: 6px;
+     left: 6px;
+     width: 45%;
+     text-align: left;
+     padding-top: 2%;
+     white-space: nowrap;
+    }
 
- td:nth-of-type(1):before {
-  content: "Date:";
- }
- td:nth-of-type(2):before {
-  content: "Venue:";
- }
- td:nth-of-type(3):before {
-  content: "Location:";
- }
+    td:nth-of-type(1):before {
+     content: "Date:";
+    }
+    td:nth-of-type(2):before {
+     content: "Venue:";
+    }
+    td:nth-of-type(3):before {
+     content: "Location:";
+    }
 
- .japan-table:nth-of-type(1):before {
-  content: "年代:";
- }
- .japan-table:nth-of-type(2):before {
-  content: "会場:";
- }
- .japan-table:nth-of-type(3):before {
-  content: "場所:";
- }
+    .japan-table:nth-of-type(1):before {
+     content: "年代:";
+    }
+    .japan-table:nth-of-type(2):before {
+     content: "会場:";
+    }
+    .japan-table:nth-of-type(3):before {
+     content: "場所:";
+    }
 
- .about-png {
-  width: 65%;
- }
+    .about-png {
+     width: 65%;
+    }
 
- .general-bio {
-  text-align: center;
-  width: 95%;
-  max-width: 95%;
-  margin: 0 auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
- }
+    .general-bio {
+     text-align: center;
+     width: 95%;
+     max-width: 95%;
+     margin: 0 auto;
+     padding-bottom: 30px;
+     padding-top: 30px;
+    }
 
- .member-photo {
-  width: 75%;
- }
+    .member-photo {
+     width: 75%;
+    }
 
- hr {
-  border: 0;
-  position: relative;
-  display: block;
-  width: 100%;
-  background-color: #fff;
-  height: 1px;
- }
+    hr {
+     border: 0;
+     position: relative;
+     display: block;
+     width: 100%;
+     background-color: #fff;
+     height: 1px;
+    }
 
- .music-png {
-  width: 50%;
-  height: 25%;
- }
+    .music-png {
+    width: 50%;
+    height: 25%;
+    }
 
- .album-art {
-  width: 90%;
-  margin: 0 auto;
- }
+    .album-art {
+     width: 90%;
+     margin: 0 auto;
+    }
 
- .thumbnail {
-  float: left;
-  width: 33.33%;
-  height: 125px;
-  padding: 0 5px;
- }
+    .thumbnail {
+     float: left;
+     width: 33.33%;
+     height: 125px;
+     padding: 0 5px;
+    }
 
- .form-control {
-  min-width: 90%;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 5px 0;
- }
+    .form-control {
+     min-width: 90%;
+     max-width: 90%;
+     margin: 0 auto;
+     padding: 5px 0;
+    }
 
- .footer-row {
-  height: 100px;
- }
+    .footer-row {
+     height: 100px;
+    }
 
- .copyright {
-  position: relative;
-  margin: 0 auto;
- }
+    .copyright {
+     position: relative;
+     margin: 0 auto;
+    }
 
- .social-links {
-  margin-left: auto;
-  margin-right: auto;
- }
-
+    .social-links {
+     margin-left: auto;
+     margin-right: auto;
+    }
 }
+
 
 /* ------------ MEDIUM DEVICES ----------*/
-
 @media screen and (min-width:600px) and (max-width:1025px) {
+    .brand-image {
+     width: 75%;
+    }
 
- .brand-image {
-  width: 75%;
- }
+    .navbar-brand {
+     width: 400px;
+     padding-left: 5px;
+     padding-top: 5px;
+    }
 
- .navbar-brand {
-  width: 400px;
-  padding-left: 5px;
-  padding-top: 5px;
- }
+    .nav-link {
+     padding-right: 2.5%;
+    }
 
- .nav-link {
-  padding-right: 2.5%;
- }
+    .flag {
+     margin-right: 1%;
+     margin-bottom: 1.5%;
+    }
 
- .flag {
-  margin-right: 1%;
-  margin-bottom: 1.5%;
- }
+    .fa.fa-bars {
+     padding-top: 5px;
+    }
 
- .fa.fa-bars {
-  padding-top: 5px;
- }
+    .jumbotron {
+     background-image: url("../images/header-image-medium.jpg");
+     height: 90vh;
+    }
 
- .jumbotron {
-  background-image: url("../images/header-image-medium.jpg");
-  height: 90vh;
- }
+    .heading {
+     margin-top: 7.5%;
+     margin-bottom: 5%;
+    }
 
- .heading {
-  margin-top: 7.5%;
-  margin-bottom: 5%;
- }
+    .japanese-heading {
+     margin-top: 5%;
+     margin-bottom: 5%;
+    }
 
- .japanese-heading {
-  margin-top: 5%;
-  margin-bottom: 5%;
- }
+    .video img {
+     width: 90%;
+    }
 
- .video img {
-  width: 90%;
- }
+    main {
+     background-image: none;
+     background-color: #111D13;
+     padding-bottom: 5%;
+    }
 
- main {
-  background-image: none;
-  background-color: #111D13;
-  padding-bottom: 5%;
- }
+    .member-photo {
+     padding-top: 5%;
+     width: 75%;
+    }
 
- .member-photo {
-  padding-top: 5%;
-  width: 75%;
- }
+    .album-art {
+     width: 85%;
+     margin: 0 auto;
+    }
 
- .album-art {
-  width: 85%;
-  margin: 0 auto;
- }
+    audio {
+     width: 100%;
+     margin: 0 auto;
+    }
 
- audio {
-  width: 100%;
-  margin: 0 auto;
- }
+    hr {
+     border: 0;
+     position: relative;
+     display: block;
+     width: 100%;
+     background-color: #fff;
+     height: 1px;
+    }
 
- hr {
-  border: 0;
-  position: relative;
-  display: block;
-  width: 100%;
-  background-color: #fff;
-  height: 1px;
- }
+    .thumbnail {
+     width: 260px;
+     height: 265px;
+    }
 
- .thumbnail {
-  width: 260px;
-  height: 265px;
- }
-
- .form-control {
-  min-width: 70%;
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 5px 0;
- }
-
+    .form-control {
+     min-width: 70%;
+     max-width: 70%;
+     margin: 0 auto;
+     padding: 5px 0;
+    }
 }
+
 
 /* ------------ LARGE DEVICES ----------*/
-
 @media only screen and (min-width: 1025px) {
+    .brand-image {
+     width: 100%;
+    }
 
- .brand-image {
-  width: 100%;
- }
+    .navbar-brand {
+     width: 600px;
+     padding-left: 0;
+     padding-top: 5px;
+    }
 
- .navbar-brand {
-  width: 600px;
-  padding-left: 0;
-  padding-top: 5px;
- }
-
- hr {
-  display: none;
- }
-
- .thumbnail {
-  width: 350px;
-  height: 375px;
- }
+    .thumbnail {
+    width: 350px;
+    height: 375px;
+    }
 
 
- .form-control {
-  min-width: 50%;
-  max-width: 50%;
- }
+    .form-control {
+    min-width: 50%;
+    max-width: 50%;
+    }
 }
 
+
 /* ------------ EXTRA LARGE DEVICES ----------*/
-
 @media only screen and (min-width: 1200px) {
- hr {
-  display: none;
- }
+    hr {
+     display: block;
+    }
 
- .member-bio {
-  max-width: 600px;
- }
+    .member-bio {
+     max-width: 600px;
+    }
 
- .form-control {
-  min-width: 50%;
-  max-width: 50%;
- }
-
+    .form-control {
+     min-width: 50%;
+     max-width: 50%;
+    }
 }
