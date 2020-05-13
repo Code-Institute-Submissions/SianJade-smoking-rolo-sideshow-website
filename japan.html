@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
     <title>The Smoking Rolo Sideshow</title>
 </head>
 
 <body>
-    <!-- JUMBOTRON AND NAVBAR -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#"><img src="assets/images/brand.png" alt="brand" class="img-responsive brand-image"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" 
@@ -50,24 +50,22 @@
             </ul>
         </div>
     </nav>
-        
+    
+    <!-- JUMBOTRON DIV TO HOLD LANDING SCREEN IMAGE -->
     <div class="jumbotron"></div>
 
     <main>
-
         <!-- VIDEO SECTION -->
-
         <section class="video jp" id="video">
             <h2 class="japanese-heading">ビデオグラフィック</h2>
-            <div class="col-10 offset-1 embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" class="mx-auto" src="https://www.youtube.com/embed/ZvMOFg_DwBE" 
+            <div class="col-10 mx-auto embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/ZvMOFg_DwBE" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div>
         </section>
 
         <!-- TOUR DATE SECTION -->
-
         <section class="tour jp" id="tour">
             <h2 class="japanese-heading">ツアー日程</h2>
             <div class="tourdates-table table-responsive-sm">
@@ -139,7 +137,6 @@
         </section>
 
         <!-- ABOUT SECTION -->
-
         <section class="about container-fluid" id="about">
             <h2 class="japanese-heading">私たちに関しては</h2>
             <p class="general-bio">ノーサンバーランドの緑の丘陵地と暗い森から、The Smoking Rolo Sideshow は 2000 
@@ -241,7 +238,6 @@
         </section>
 
         <!-- MUSIC SECTION -->
-
         <section class="music container-fluid jp" id="music">
             <h2 class="japanese-heading">音楽</h2>
             <div class="card-deck row justify-content-around">
@@ -330,7 +326,6 @@
         </section>
 
         <!-- GALLERY SECTION -->
-
         <section class="gallery container-fluid jp" id="photo-gallery">
             <h2 class="japanese-heading">画廊</h2>
             <div class="row justify-content-center fb-row">
@@ -406,7 +401,6 @@
         </section>
 
         <!-- BOOKING SECTION -->
-
         <section class="booking container-fluid" id="booking">
             <h2 class="japanese-heading">前売り</h2>
             <form>
@@ -434,11 +428,9 @@
                 <button type="submit" class="btn submit-button">申し出る</button>
             </form>
         </section>
-
     </main>
 
-    <!-- FOOTER SECTION -->
-
+    <!-- FOOTER -->
     <footer class="container-fluid">
         <div class="row footer-row list-inline">
             <p class="copyright">コピーライト - The Smoking Rolo Sideshow 2019</p>
@@ -478,5 +470,4 @@
         });
     </script>
 </body>
-
 </html>

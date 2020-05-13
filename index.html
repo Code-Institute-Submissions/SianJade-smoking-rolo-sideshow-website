@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
     <title>The Smoking Rolo Sideshow</title>
 </head>
 
 <body>
     
-    <!-- NAVBAR AND JUMBOTRON -->
-    
+    <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg">
         <a class="navbar-brand" href="#">
             <img src="assets/images/brand.png" alt="brand" class="img-responsive brand-image">
@@ -54,23 +53,23 @@
         </div>
     </nav>
     
-    <div class="jumbotron"></div>
+    <!-- JUMBOTRON DIV TO HOLD LANDING SCREEN IMAGE -->
+    <div class="jumbotron">
+        <div class="logo"></div>
+    </div>
     
     <main>
-
-    <!-- VIDEO SECTION -->
-
+        <!-- VIDEO SECTION -->
         <section class="video" id="video">
             <img src="assets/images/videographic.png" class="img-responsive heading" alt="section title">
-            <div class="col-10 offset-1 embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvMOFg_DwBE" 
+            <div class="col-10 mx-auto embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/ZvMOFg_DwBE" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div>
         </section>
-    
-    <!-- TOUR DATE SECTION -->
-    
+
+        <!-- TOUR DATE SECTION -->
         <section class="tour" id="tour">
             <img src="assets/images/tour.png" class="img-responsive heading" alt="section title">
             <div class="tourdates-table table-responsive-sm">
@@ -141,8 +140,7 @@
             </div>
         </section>
 
-    <!-- ABOUT SECTION -->
-
+        <!-- ABOUT SECTION -->
         <section class="about container-fluid" id="about">
             <img src="assets/images/about.png" class="img-responsive heading about-png" alt="section title">
             <p class="general-bio">From the green rolling hills and dark woods of Northumberland, The Smoking Rolo Sideshow emerged in the late 
@@ -180,7 +178,7 @@
                     </article>
                 </div>
             </div>
-                <hr>
+            <hr>
             <div class="card-deck row justify-content-center">
                 <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
                     <article class="card bg-transparent text-center member">
@@ -242,8 +240,7 @@
             </div>
         </section>
 
-    <!-- MUSIC SECTION -->
-
+        <!-- MUSIC SECTION -->
         <section class="music container-fluid" id="music">
             <img src="assets/images/music.png" class="img-responsive heading music-png" alt="section title">
             <div class="card-deck row justify-content-around">
@@ -331,8 +328,7 @@
             </div>
         </section>
 
-    <!-- GALLERY SECTION -->
-
+        <!-- GALLERY SECTION -->
         <section class="gallery container-fluid" id="photo-gallery">
             <img src="assets/images/gallery.png" class="img-responsive heading" alt="section title">
             <div class="row justify-content-center fb-row">
@@ -419,8 +415,7 @@
             </div>
         </section>
 
-    <!-- BOOKING SECTION -->
-
+        <!-- BOOKING SECTION -->
         <section class="booking container-fluid" id="booking">
             <img src="assets/images/booking.png" class="img-responsive heading" alt="section title">
             <form>
@@ -448,11 +443,9 @@
                 <button type="submit" class="btn submit-button">Submit</button>
             </form>
         </section>
-
     </main>
 
-    <!-- FOOTER SECTION -->
-
+    <!-- FOOTER -->
     <footer class="container-fluid">
         <div class="row footer-row list-inline">
             <p class="copyright">Copyright - The Smoking Rolo Sideshow 2019</p>
