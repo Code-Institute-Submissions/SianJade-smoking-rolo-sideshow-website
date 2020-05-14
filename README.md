@@ -2,11 +2,11 @@
 
 Stream One Project: User-Centric Frontend Development - Code Institute
 
-This website is to promote indie-rock band The Smoking Rolo Sideshow, and to keep fans of the band updated on news such as tours and new music releases; as well as to provide background information on the band to potential new fans who are only just discovering them, and to provide them with easy access to the band's videos and back catalogue of music.
-
-A Japanese version of the page has also been included, as the band's record sales were highest in both the UK and Japan, and they have a sizeable following in both countries.
+Having an online presence is vital for the continued success and growth of any band in the modern era - with that in mind, the purpose of this website is to promote indie-rock band The Smoking Rolo Sideshow. The site will alllow fans of the band updated on news such as tours and new music releases; as well as to provide background information on the band to potential new fans who are only just discovering them, and to provide them with easy access to the band's videos and back catalogue of music. A Japanese version of the page has also been included, as the band's record sales were highest in both the UK and Japan, and they have a sizeable following in both countries and so it made sense to create a version of the site which would be accessible to this demographic, rather than potentially alienating a large portion of the band's fanbase.
 
 A live desktop demo can be found [here](https://sianjade.github.io/smoking-rolo-sideshow-website/).
+
+Wireframes for all device sizes for the website can be found in the [wireframes](https://github.com/SianJade/smoking-rolo-sideshow-website/tree/master/assets/wireframes) folder within the assets directory in this repository.
  
  
 ## UX
@@ -46,7 +46,9 @@ As a long-time fan of the band, who likes to go any gigs they play local to me, 
 
 - The site also makes use of Bootstrap's card deck component in order to display the band's music, with an image of the album art each song is featured on so as to add more visual appeal than if the songs were listed in a text only form or by using the `audio` tag by itself, as an image cannot be added to the audio tag, but an image and audio can be added to a Bootstrap card. The Music section of the site also allows users to download each track for offline listening should they wish to do so by right clicking the audio element for each song and then selecting the 'Save audio as' option from the menu which appears.
 
-- Due to the combination of large amounts of clickable and non-clickable elements on the page, I implemented an outer glow on hover only on clickable features of the site on desktops - this makes these elements appear as though they are lighting up - in order to help make more clear which elements are clickable. I also felt that this would add a more dynamic element to the site's design and style.
+- Due to the combination of large amounts of clickable and non-clickable elements on the page, I implemented an outer glow on hover only on clickable features of the site on desktops - this makes these elements appear as though they are lighting up in order to help make more clear which elements are clickable. I also felt that this would add a more dynamic element to the site's design and style.
+
+- In order to make the navigation links accessible to users no matter where they are on the page, the navbar makes use of Bootstrap's 'fixed-top' class in order to ensure that it is always visbible at the top of the browser window.
 
 - All links to external websites use the `target="_blank"` attribute in order to ensure that they open in a new tab and do not open in the current tab, thus preventing the need for the use of the browser's back and forward buttons.
 
@@ -113,9 +115,9 @@ As a long-time fan of the band, who likes to go any gigs they play local to me, 
 
 ## Deployment
 - The website is hosted via GitHub Pages and is deployed from the master branch - this is to allow the deployed site to automatically update with any new commits that are made to the master branch.
-    - To deploy the dashboard to GitHub Pages, I first clicked the settings tab on the GitHub repository for the site.
+    - To deploy the site to GitHub Pages, I first clicked the settings tab on the GitHub repository for the site.
     - From here, I scrolled to the GitHub Pages section of the settings tab and changed the Source from 'none' to 'master branch'.
-    - This deployed the dashboard to GitHub Pages and provided me with a link to the hosted page, which I then copied and pasted into the decription of the repository for easy access.
+    - This deployed the site to GitHub Pages and provided a link to the hosted page, which I then copied and pasted into the decription of the repository for easy access.
 
 - To run this application locally:
     - Click the green 'clone or download' button in the [GitHub repository for the project](https://github.com/SianJade/smoking-rolo-sideshow-website).
