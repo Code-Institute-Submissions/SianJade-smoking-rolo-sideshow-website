@@ -1,23 +1,16 @@
 # The Smoking Rolo Sideshow Official Website
 
 Stream One Project: User-Centric Frontend Development - Code Institute
+ 
+## UX
 
-Having an online presence is vital for the continued success and growth of any band in the modern era - with that in mind, the purpose of this website is to promote indie-rock band The Smoking Rolo Sideshow. The site will alllow fans of the band updated on news such as tours and new music releases; as well as to provide background information on the band to potential new fans who are only just discovering them, and to provide them with easy access to the band's videos and back catalogue of music. A Japanese version of the page has also been included, as the band's record sales were highest in both the UK and Japan, and they have a sizeable following in both countries and so it made sense to create a version of the site which would be accessible to this demographic, rather than potentially alienating a large portion of the band's fanbase.
+Having an online presence is vital for the continued success and growth of any band in the modern era - with that in mind, the purpose of this website is to promote indie-rock band The Smoking Rolo Sideshow. The site will alllow fans of the band updated on news such as tours and new music releases; as well as to provide background information on the band to potential new fans who are only just discovering them, and to provide them with easy access to the band's videos and back catalogue of music. The 'About' section of the page includes a general biography of the band, which will not only provide some additional context about the band and their origins to fans who may be interested, but it also serves as a description of the band which promoters, reviewers, and concert venues are able to copy and paste to use on their own sites for promotional purposes.
+
+A Japanese version of the page has also been included, as the band's record sales were highest in both the UK and Japan, and they have a sizeable following in both countries and so it made sense to create a version of the site which would be accessible to this demographic, rather than potentially alienating a large portion of the band's fanbase.
 
 A live desktop demo can be found [here](https://sianjade.github.io/smoking-rolo-sideshow-website/).
 
 Wireframes for all device sizes for the website can be found in the [wireframes](https://github.com/SianJade/smoking-rolo-sideshow-website/tree/master/assets/wireframes) folder within the assets directory in this repository.
- 
- 
-## UX
- 
-The main aim of this website was to compile and display all relevant information about the band in a clear, contemporary fashion, and in a way that is simple for the user to navigate and digest.
-
-I wanted to ensure that users who visited the site - whether they were long-time fans of the band, or had only recently discovered them and were looking to learn more about them - would be able to find specific, relevant information easily and quickly. I achieved this by breaking the site up into clearly defined sections and adding links in the navbar that would allow them to jump to the particular section on the page they are looking for, making it simple for users to find the specific information they were looking for without having to traverse the entire site in order to find this information.
-
-Included in the About section of the page is a small general overview of the band as a whole, before introducing each of the members individually. This general biography of the band will not only provide some additional context about the band and their origins to fans who may be interested, but it also serves as a description of the band which promoters, reviewers, and concert venues are able to copy and paste to use on their own sites for promotional purposes.
-
-Social media links for the band are also included in the footer section, so that users can follow these in order to keep up to date with the band's activity and any news.
 
 
 ## User stories
@@ -48,11 +41,15 @@ As a long-time fan of the band, who likes to go any gigs they play local to me, 
 
 - Due to the combination of large amounts of clickable and non-clickable elements on the page, I implemented an outer glow on hover only on clickable features of the site on desktops - this makes these elements appear as though they are lighting up in order to help make more clear which elements are clickable. I also felt that this would add a more dynamic element to the site's design and style.
 
+- In order to ensure that site users would be able to find specific, relevant information easily and quickly, the site is broken up into clearly defined sections which correspond with links in the navbar that allow users to jump to the particular section on the page they are looking for, making it simple for users to find the specific information without having to traverse the entire site in order to find it.
+
 - In order to make the navigation links accessible to users no matter where they are on the page, the navbar makes use of Bootstrap's 'fixed-top' class in order to ensure that it is always visbible at the top of the browser window.
 
 - All links to external websites use the `target="_blank"` attribute in order to ensure that they open in a new tab and do not open in the current tab, thus preventing the need for the use of the browser's back and forward buttons.
 
 - The site also implements Bootstrap's tooltips when the flag buttons in the navbar - which allow the user to switch between the English and Japanese versions of the site - are hovered over, to make each the function of each button clear before they are clicked.
+
+- Social media links for the band are also included in the footer section, so that users can follow these in order to keep up to date with the band's activity and any news.
 
 ### Features Left to Implement
 
