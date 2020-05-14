@@ -13,8 +13,8 @@ body {
   color: #b5a945;
 }
 
-/* ------------ GENERAL ----------*/
 
+/* ------------ GENERAL ----------*/
 main {
  position: relative;
 }
@@ -111,8 +111,8 @@ audio:hover,
  text-shadow: 1px 1px #000;
 }
 
-/* ------------ NAVBAR ----------*/
 
+/* ------------ NAVBAR ----------*/
 .nav {
  padding: 0 5px;
 }
@@ -183,8 +183,8 @@ audio:hover,
  border-left-color: #233F29;
 }
 
-/* ------------ JUMBOTRON ----------*/
 
+/* ------------ JUMBOTRON ----------*/
 .jumbotron {
  background-image: url("/assets/images/rocketsilencedarker.png");
  border-radius: 0;
@@ -204,14 +204,13 @@ margin: auto auto;
 height: 50px;
 }
 
-/* ------------ VIDEO ----------*/
 
+/* ------------ VIDEO ----------*/
 iframe {
  margin: 0 auto;
 }
 
 /* ------------ TOUR DATES ----------*/
-
 .table {
  position: relative;
  width: 100%;
@@ -232,22 +231,14 @@ iframe {
 }
 
 /* ------------ ABOUT ----------*/
-
 .general-bio {
  text-align: center;
- width: 85%;
- max-width: 85%;
+ width: 60%;
  margin: 0 auto;
  text-shadow: 2px 1px #000;
  font-size: 18px;
  color: #fff;
  padding-bottom: 20px;
-}
-
-.member {
- text-align: center;
- margin: auto;
- width: 100%;
 }
 
 .card {
@@ -257,35 +248,24 @@ iframe {
  color: #fff;
 }
 
+.card-text {
+    font-size: 18px;
+}
+
 .member-photo {
- width: 50%;
  margin: 15px auto;
+ border: none;
+ border-radius: 5px;
 }
 
-.card-about {
- padding: 5px;
- padding-bottom: 0;
-}
-
-.member-bio {
- padding: 0;
- font-size: 18px;
- text-align: center;
- text-shadow: 2px 1px #000;
-}
-
-.name-instrument {
- text-shadow: 2px 1px #000;
-}
 
 /* ------------ MUSIC ----------*/
-
 audio {
  border-radius: 30px;
 }
 
-/* ------------ GALLERY ----------*/
 
+/* ------------ GALLERY ----------*/
 .img-fluid {
  max-width: 100%;
  height: auto;
@@ -301,8 +281,8 @@ audio {
  border-radius: 5px;
 }
 
-/* ------------ CONTACT ----------*/
 
+/* ------------ CONTACT ----------*/
 .form-control {
  position: relative;
  min-width: 50%;
@@ -323,8 +303,8 @@ audio {
  display: block;
 }
 
-/* ------------ FOOTER ----------*/
 
+/* ------------ FOOTER ----------*/
 footer {
  background-color: #111613;;
  color: #b5a945;
@@ -479,8 +459,6 @@ footer {
 
     .general-bio {
      text-align: center;
-     width: 95%;
-     max-width: 95%;
      margin: 0 auto;
      padding-bottom: 30px;
      padding-top: 30px;
@@ -502,11 +480,6 @@ footer {
     .music-png {
     width: 50%;
     height: 25%;
-    }
-
-    .album-art {
-     width: 90%;
-     margin: 0 auto;
     }
 
     .thumbnail {
@@ -589,9 +562,9 @@ footer {
      padding-bottom: 5%;
     }
 
-    .member-photo {
+    .card-header {
      padding-top: 5%;
-     width: 75%;
+     margin: 0 auto;
     }
 
     .album-art {
@@ -640,14 +613,17 @@ footer {
     }
 
     .thumbnail {
-    width: 350px;
-    height: 375px;
+     width: 350px;
+     height: 375px;
     }
 
+    hr {
+     display: none;
+    }
 
     .form-control {
-    min-width: 50%;
-    max-width: 50%;
+     min-width: 50%;
+     max-width: 50%;
     }
 }
 
@@ -655,11 +631,7 @@ footer {
 /* ------------ EXTRA LARGE DEVICES ----------*/
 @media only screen and (min-width: 1200px) {
     hr {
-     display: block;
-    }
-
-    .member-bio {
-     max-width: 600px;
+     display: none;
     }
 
     .form-control {
