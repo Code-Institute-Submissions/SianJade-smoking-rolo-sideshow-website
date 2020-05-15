@@ -190,7 +190,7 @@ audio:hover,
 }
 
 .landing-image {
- background-image: url("../assets/images/header.png");
+ background-image: url("/assets/images/header.png");
  height: 100vh;
  width: 100vw;
  background-attachment: fixed;
