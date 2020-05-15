@@ -186,22 +186,17 @@ audio:hover,
 
 /* ------------ JUMBOTRON ----------*/
 .jumbotron {
- background-image: url("/assets/images/rocketsilencedarker.png");
- border-radius: 0;
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
  padding: 0;
- margin: 0;
- height: 100vh;
- width: 100vw;
 }
 
-.logo {
-background-image: url("/assets/images/brand.png");
-background-repeat: no-repeat;
-margin: auto auto;
-height: 50px;
+.landing-image {
+ background-image: url("/assets/images/header.png");
+ height: 100vh;
+ width: 100vw;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin: 0;
 }
 
 
@@ -209,6 +204,7 @@ height: 50px;
 iframe {
  margin: 0 auto;
 }
+
 
 /* ------------ TOUR DATES ----------*/
 .table {
@@ -229,6 +225,7 @@ iframe {
  text-shadow: 2px 1px #000;
  font-size: 18px
 }
+
 
 /* ------------ ABOUT ----------*/
 .general-bio {
@@ -262,6 +259,7 @@ iframe {
 /* ------------ MUSIC ----------*/
 audio {
  border-radius: 30px;
+ background-color: #fff;
 }
 
 
@@ -382,15 +380,8 @@ footer {
      padding-top: 5px;
     }
 
-    .jumbotron {
-     background-image: url("../images/mobile-header.jpg");
-     height: 90vh;
-    }
-
-    main {
-     background-image: none;
-     background-color: #111D13;
-     padding-bottom: 5%;
+    .landing-image {
+        background-image: url("/assets/images/mobile-header.png");
     }
 
     .heading {
@@ -460,12 +451,14 @@ footer {
     .general-bio {
      text-align: center;
      margin: 0 auto;
+     width: 95%;
+     font-size: 14pt;
      padding-bottom: 30px;
      padding-top: 30px;
     }
 
-    .member-photo {
-     width: 75%;
+    .card-text {
+     font-size: 14pt;
     }
 
     hr {
@@ -537,9 +530,8 @@ footer {
      padding-top: 5px;
     }
 
-    .jumbotron {
-     background-image: url("../images/header-image-medium.jpg");
-     height: 90vh;
+    .landing-image {
+        background-image: url("/assets/images/tablet-header.png");
     }
 
     .heading {
@@ -552,18 +544,11 @@ footer {
      margin-bottom: 5%;
     }
 
-    .video img {
+    .general-bio {
      width: 90%;
     }
 
-    main {
-     background-image: none;
-     background-color: #111D13;
-     padding-bottom: 5%;
-    }
-
     .card-header {
-     padding-top: 5%;
      margin: 0 auto;
     }
 
